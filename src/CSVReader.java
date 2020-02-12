@@ -9,33 +9,9 @@ public class CSVReader {
 
     private String filePath;
 
-    /*public CSVReader(String filePath) {
-        this.filePath = filePath;
-    }*/
-
-   /* public List<String[]> readCSV() throws IOException {
-        int count = 0;
-        List<String[]> content = new ArrayList<>();
-        List<String[]> content2 = new ArrayList<>();
-
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            String line = "";
-            while ((line = br.readLine()) != null) {
-                content.add(line.split(","));
-            }
-        } catch (FileNotFoundException e) {
-            System.out.println("Broke");
-        }
-        for (int i = 0; i < content.size(); i++) {
-            System.out.println(content.get(i).collect(Collectors.joining()));
-        }
-        return content2;
-
-    }*/
-
-   public CSVReader(){
-       System.out.println("test");
-       File file = new File("test_data.csv");
+   public CSVReader(String filePath){
+       this.filePath = filePath;
+       File file = new File(this.filePath);
 
        List<List<String>> lines = new ArrayList<>();
        Scanner input;
@@ -65,4 +41,4 @@ public class CSVReader {
 }
 
 
-
+//https://stackoverflow.com/questions/40074840/reading-a-csv-file-into-a-array

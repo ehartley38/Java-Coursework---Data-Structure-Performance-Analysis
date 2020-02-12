@@ -7,7 +7,8 @@ public class ArrayDirectory implements Directory {
     private static Object CSVReader;
 
     public static void main(String[] args) throws IOException {
-       CSVReader csvReader = new CSVReader();
+       CSVReader csvReader = new CSVReader("test_data.csv");
+
 
 
 
