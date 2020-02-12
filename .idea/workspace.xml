@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="306bfce7-181f-4b62-9589-296cca981413" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CSVReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ArrayDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayDirectory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Directory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StaffMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StaffMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/test_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSVReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +46,14 @@
       <recent name="C:\Users\ehart\IdeaProjects\project-2\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ArrayDirectory">
+    <configuration name="ArrayDirectory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArrayDirectory" />
+      <module name="Project-2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CSVReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CSVReader" />
       <module name="Project-2" />
@@ -60,6 +63,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayDirectory" />
         <item itemvalue="Application.CSVReader" />
       </list>
     </recent_temporary>
@@ -75,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1581439779332</updated>
       <workItem from="1581439780928" duration="895000" />
-      <workItem from="1581445425757" duration="6322000" />
+      <workItem from="1581445425757" duration="6806000" />
+      <workItem from="1581504989979" duration="8289000" />
     </task>
     <task id="LOCAL-00001" summary="Added the necessary files">
       <created>1581440420376</created>
@@ -84,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581440420376</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added function that reads csv file and prints contents out">
+      <created>1581455689433</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581455689434</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,37 +107,62 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added the necessary files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the necessary files" />
+    <MESSAGE value="Added function that reads csv file and prints contents out" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added function that reads csv file and prints contents out" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1245" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1581449296886">
+    <state x="1245" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1581509473352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581449296886" />
+    <state x="1245" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581509473352" />
     <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581445443201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581445443201" />
-    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1581455658561">
+    <state x="1065" y="119" key="CommitChangelistDialog2" timestamp="1581455688636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581455658561" />
-    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1581455658561">
+    <state x="1065" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581455688636" />
+    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1581519217400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581455658561" />
-    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1581455658561">
+    <state width="914" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581519217400" />
+    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1581519217400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581455658561" />
-    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1581455658561">
+    <state width="914" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581519217400" />
+    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1581519217400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581455658561" />
+    <state width="914" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581519217400" />
+    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1581519217400">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581519217400" />
+    <state width="914" height="347" key="GridCell.Tab.1.bottom" timestamp="1581519155251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581519155251" />
+    <state width="914" height="347" key="GridCell.Tab.1.center" timestamp="1581519155251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581519155251" />
+    <state width="914" height="347" key="GridCell.Tab.1.left" timestamp="1581519155251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581519155251" />
+    <state width="914" height="347" key="GridCell.Tab.1.right" timestamp="1581519155251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581519155251" />
     <state x="662" y="145" key="SettingsEditor" timestamp="1581448925041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="662" y="145" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581448925041" />
+    <state x="1032" y="257" key="Vcs.Push.Dialog.v2" timestamp="1581455692878">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581455692878" />
   </component>
   <component name="masterDetails">
     <states>
