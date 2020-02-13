@@ -13,7 +13,7 @@ public interface Directory {
      *
      * @param entry the new entry to add
      */
-    //void insertEntry(Entry entry);
+    void insertEntry(Entry entry);
 
     /**
      * Remove an entry from the directory using their surname.
@@ -50,6 +50,6 @@ public interface Directory {
      *
      * @return an array list of all entries
      */
-   // List<Entry> toArrayList();
+    List<Entry> toArrayList();
 
 }

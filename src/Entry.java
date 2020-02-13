@@ -1,9 +1,9 @@
-public class StaffMember {
+public class Entry {
 
     String surname, initials;
     int extension;
 
-    public StaffMember(String surname, String initials, int extension){
+    public Entry(String surname, String initials, int extension){
         this.surname = surname;
         this.initials = initials;
         this.extension = extension;
@@ -31,6 +31,10 @@ public class StaffMember {
 
     public void setExtension(int extension) {
         this.extension = extension;
+    }
+
+    public String toString(){
+        return (this.surname + " " + this.initials + " " + this.extension);
     }
 
     public static void main(String[] args) {
