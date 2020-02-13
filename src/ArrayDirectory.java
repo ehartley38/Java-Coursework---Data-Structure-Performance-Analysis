@@ -5,14 +5,18 @@ public class ArrayDirectory implements Directory {
 
 
     private static Object CSVReader;
+    private StaffMember[] members;
 
     public static void main(String[] args) throws IOException {
-       CSVReader csvReader = new CSVReader("test_data.csv");
 
+        CSVReader cr = new CSVReader("test_data.csv");
+        StaffMember[] members = new StaffMember[cr.getLines().size()];
 
-
-
-
+        for (int i=0; i<cr.getLines().size(); i++){
+            members[i] = new StaffMember(cr.getLines().get(i).get(0), cr.getLines().get(i).get(1),
+                    Integer.parseInt(cr.getLines().get(i).get(2)));
+        }
+        
     }
 
 

@@ -7,13 +7,13 @@ import java.util.Scanner;
 
 public class CSVReader {
 
+    private List<List<String>> lines = new ArrayList<>();
     private String filePath;
 
    public CSVReader(String filePath){
        this.filePath = filePath;
        File file = new File(this.filePath);
 
-       List<List<String>> lines = new ArrayList<>();
        Scanner input;
 
        try {
@@ -29,9 +29,15 @@ public class CSVReader {
        } catch (FileNotFoundException e) {
            e.printStackTrace();
        }
-       System.out.println(lines);
 
    }
+
+   public List<List<String>> getLines(){
+       return this.lines;
+
+   }
+
+
 
     public static void main(String[] args) {
 
