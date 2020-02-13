@@ -10,31 +10,33 @@ public class ArrayDirectory implements Directory {
     private Entry[] members;
 
     public ArrayDirectory(){
-        
-    }
-
-    public static void main(String[] args) throws IOException {
-
         CSVReader cr = new CSVReader("test_data.csv");
-        Entry[] members = new Entry[cr.getLines().size()];
+        members = new Entry[cr.getLines().size()];
 
         for (int i=0; i<cr.getLines().size(); i++){
             members[i] = new Entry(cr.getLines().get(i).get(0), cr.getLines().get(i).get(1),
                     Integer.parseInt(cr.getLines().get(i).get(2)));
         }
 
-        System.out.println(Arrays.toString(members));
+    }
+
+    public static void main(String[] args) throws IOException {
 
     }
 
 
     @Override
     public void insertEntry(Entry entry) {
-        Entry[] tempMembers;
-        tempMembers = Arrays.copyOf(members, members.length + 1);
-        tempMembers[tempMembers.length-1] = entry;
-        members = tempMembers;
 
+        int size = members.length;
+        Entry[] tempMembers = new Entry[size+1];
+
+        for (int i=0; i<size; i++){
+            tempMembers[i] = members[i];
+        }
+
+        tempMembers[size] = entry;
+        members = tempMembers;
     }
 
     @Override
@@ -62,5 +64,8 @@ public class ArrayDirectory implements Directory {
         return null;
     }
 
+    public Entry[] getMembers(){
+        return members;
+    }
 
 }

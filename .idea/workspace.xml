@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="306bfce7-181f-4b62-9589-296cca981413" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ArrayDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayDirectory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Directory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StaffMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +46,7 @@
       <recent name="C:\Users\ehart\IdeaProjects\project-2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ArrayDirectory">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ArrayDirectory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayDirectory" />
       <module name="Project-2" />
@@ -64,8 +61,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Project-2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ArrayDirectory" />
         <item itemvalue="Application.CSVReader" />
       </list>
@@ -84,7 +89,7 @@
       <workItem from="1581439780928" duration="895000" />
       <workItem from="1581445425757" duration="6806000" />
       <workItem from="1581504989979" duration="10330000" />
-      <workItem from="1581598475697" duration="8423000" />
+      <workItem from="1581598475697" duration="10642000" />
     </task>
     <task id="LOCAL-00001" summary="Added the necessary files">
       <created>1581440420376</created>
@@ -121,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581603307910</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Completed insertEntry method and added main class">
+      <created>1581614252735</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581614252735</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +148,8 @@
     <MESSAGE value="Updated CSVReader class to parse info from csv file into a 2D array" />
     <MESSAGE value="Cleaned up CSVReader class" />
     <MESSAGE value="Added individual objects of each staff member to an array, with all their information cotained within it as well." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added individual objects of each staff member to an array, with all their information cotained within it as well." />
+    <MESSAGE value="Completed insertEntry method and added main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed insertEntry method and added main class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1245" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1581611606637">
@@ -151,26 +164,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581612165361" />
-    <state x="1065" y="119" key="CommitChangelistDialog2" timestamp="1581603306961">
+    <state x="755" y="119" key="CommitChangelistDialog2" timestamp="1581614251850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1065" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581603306961" />
-    <state width="916" height="285" key="GridCell.Tab.0.bottom" timestamp="1581613909529">
+    <state x="755" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581614251850" />
+    <state width="914" height="282" key="GridCell.Tab.0.bottom" timestamp="1581617280538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581613909529" />
-    <state width="916" height="285" key="GridCell.Tab.0.center" timestamp="1581613909528">
+    <state width="914" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581617280538" />
+    <state width="914" height="282" key="GridCell.Tab.0.center" timestamp="1581617280538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581613909528" />
-    <state width="916" height="285" key="GridCell.Tab.0.left" timestamp="1581613909528">
+    <state width="914" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581617280538" />
+    <state width="914" height="282" key="GridCell.Tab.0.left" timestamp="1581617280538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581613909528" />
-    <state width="916" height="285" key="GridCell.Tab.0.right" timestamp="1581613909528">
+    <state width="914" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581617280538" />
+    <state width="914" height="282" key="GridCell.Tab.0.right" timestamp="1581617280538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581613909528" />
+    <state width="914" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581617280538" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1581612885406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -191,10 +204,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="662" y="145" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581448925041" />
-    <state x="1032" y="257" key="Vcs.Push.Dialog.v2" timestamp="1581603311151">
+    <state x="1032" y="257" key="Vcs.Push.Dialog.v2" timestamp="1581614258899">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581603311151" />
+    <state x="1032" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581614258899" />
+    <state x="672" y="312" key="git4idea.merge.GitPullDialog" timestamp="1581614254997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="312" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581614254997" />
+    <state x="1182" y="143" key="refactoring.ChangeSignatureDialog" timestamp="1581616871322">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1182" y="143" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581616871322" />
   </component>
   <component name="masterDetails">
     <states>
