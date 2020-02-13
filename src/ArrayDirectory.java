@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 
@@ -40,10 +41,12 @@ public class ArrayDirectory implements Directory {
     public void deleteEntryUsingName(String surname) {
 
         for (int i=0; i<members.length; i++) {
-            if (members[i].surname == surname){
-                List<Entry> membersList = Arrays.asList(members);
+            if (members[i].surname.equals(surname)){
+                int size = members.length;
+                List<Entry> membersList = new LinkedList<Entry>(Arrays.asList(members));
                 membersList.remove(i);
-                Entry[] members = membersList.toArray(new Entry[members.length-1]);
+                members = membersList.toArray(new Entry[size-1]);
+                break;
             }
         }
 
