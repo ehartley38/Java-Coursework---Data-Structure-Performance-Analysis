@@ -20,9 +20,6 @@ public class ArrayDirectory implements Directory {
 
     }
 
-    public static void main(String[] args) throws IOException {
-
-    }
 
 
     @Override
@@ -42,6 +39,14 @@ public class ArrayDirectory implements Directory {
     @Override
     public void deleteEntryUsingName(String surname) {
 
+        for (int i=0; i<members.length; i++) {
+            if (members[i].surname == surname){
+                List<Entry> membersList = Arrays.asList(members);
+                membersList.remove(i);
+                Entry[] members = membersList.toArray(new Entry[members.length-1]);
+            }
+        }
+
     }
 
     @Override
@@ -56,16 +61,21 @@ public class ArrayDirectory implements Directory {
 
     @Override
     public String lookupExtension(String surname) {
+
         return null;
     }
 
     @Override
     public List<Entry> toArrayList() {
+
         return null;
     }
 
     public Entry[] getMembers(){
+
         return members;
     }
 
 }
+
+//https://www.geeksforgeeks.org/how-to-add-an-element-to-an-array-in-java/

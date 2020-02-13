@@ -6,6 +6,8 @@ public class Main {
         ArrayDirectory ad = new ArrayDirectory();
         ad.insertEntry(new Entry("Hartley", "E.H", 12345));
         System.out.println(Arrays.toString(ad.getMembers()));
+        ad.deleteEntryUsingName("Hartley");
+        System.out.println(Arrays.toString(ad.getMembers()));
     }
 
 }
