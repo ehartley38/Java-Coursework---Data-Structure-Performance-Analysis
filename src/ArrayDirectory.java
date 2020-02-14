@@ -68,6 +68,11 @@ public class ArrayDirectory implements Directory {
 
     @Override
     public void updateExtensionUsingName(String surname, String newNumber) {
+        for (int i=0; i<members.length; i++) {
+            if(members[i].surname.equals(surname)){
+                members[i].extension = Integer.parseInt(newNumber);
+            }
+        }
 
     }
 

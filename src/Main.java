@@ -9,6 +9,9 @@ public class Main {
         ad.deleteEntryUsingName("Amner");
         ad.deleteEntryUsingExtension("12345");
         System.out.println(Arrays.toString(ad.getMembers()));
+        ad.updateExtensionUsingName("Westgarth", "99999");
+        System.out.println(Arrays.toString(ad.getMembers()));
+
     }
 
 }
