@@ -16,7 +16,7 @@ public class ArrayDirectory implements Directory {
 
         for (int i=0; i<cr.getLines().size(); i++){
             members[i] = new Entry(cr.getLines().get(i).get(0), cr.getLines().get(i).get(1),
-                    Integer.parseInt(cr.getLines().get(i).get(2)));
+                    cr.getLines().get(i).get(2));
         }
 
     }
@@ -55,7 +55,7 @@ public class ArrayDirectory implements Directory {
     public void deleteEntryUsingExtension(String number) {
 
         for (int i=0; i<members.length; i++) {
-            if (Integer.parseInt(number) == members[i].extension) {
+            if (number.equals(members[i].extension)) {
                 int size = members.length;
                 List<Entry> membersList = new LinkedList<Entry>(Arrays.asList(members));
                 membersList.remove(i);
@@ -70,7 +70,7 @@ public class ArrayDirectory implements Directory {
     public void updateExtensionUsingName(String surname, String newNumber) {
         for (int i=0; i<members.length; i++) {
             if(members[i].surname.equals(surname)){
-                members[i].extension = Integer.parseInt(newNumber);
+                members[i].extension = newNumber;
             }
         }
 
@@ -78,6 +78,11 @@ public class ArrayDirectory implements Directory {
 
     @Override
     public String lookupExtension(String surname) {
+        for (int i=0; i<members.length; i++){
+            if (members[i].surname.equals(surname)){
+                return members[i].extension;
+            }
+        }
 
         return null;
     }
