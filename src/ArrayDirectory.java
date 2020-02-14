@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -89,8 +90,9 @@ public class ArrayDirectory implements Directory {
 
     @Override
     public List<Entry> toArrayList() {
+        return new ArrayList<>(Arrays.asList(members));
 
-        return null;
+
     }
 
     public Entry[] getMembers(){

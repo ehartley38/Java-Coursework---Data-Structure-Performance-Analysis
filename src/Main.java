@@ -12,6 +12,7 @@ public class Main {
         ad.updateExtensionUsingName("Westgarth", "99999");
         System.out.println(Arrays.toString(ad.getMembers()));
         System.out.println(ad.lookupExtension("Westgarth"));
+        System.out.println(ad.toArrayList());
 
     }
 
