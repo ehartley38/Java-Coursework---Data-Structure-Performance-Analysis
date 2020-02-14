@@ -22,7 +22,6 @@ public class ArrayDirectory implements Directory {
     }
 
 
-
     @Override
     public void insertEntry(Entry entry) {
 
@@ -54,6 +53,16 @@ public class ArrayDirectory implements Directory {
 
     @Override
     public void deleteEntryUsingExtension(String number) {
+
+        for (int i=0; i<members.length; i++) {
+            if (Integer.parseInt(number) == members[i].extension) {
+                int size = members.length;
+                List<Entry> membersList = new LinkedList<Entry>(Arrays.asList(members));
+                membersList.remove(i);
+                members = membersList.toArray(new Entry[size-1]);
+                break;
+            }
+        }
 
     }
 
