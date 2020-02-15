@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="306bfce7-181f-4b62-9589-296cca981413" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ArrayListDirectory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HashMapDirectory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayListDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayListDirectory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +101,7 @@
       <workItem from="1581598475697" duration="11572000" />
       <workItem from="1581620243751" duration="4264000" />
       <workItem from="1581705157513" duration="644000" />
-      <workItem from="1581772759429" duration="3311000" />
+      <workItem from="1581772759429" duration="3893000" />
     </task>
     <task id="LOCAL-00001" summary="Added the necessary files">
       <created>1581440420376</created>
@@ -175,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581691030267</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Made ArrayListDirectory and HashMapDirectory classes. Completed constructor for ArrayListDirectory.">
+      <created>1581778951972</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1581778951972</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +200,8 @@
     <MESSAGE value="Started delete entry using name method funcctionality" />
     <MESSAGE value="Completed deleteEntryUsingExtension method" />
     <MESSAGE value="Completed updateExtensionUsingName method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed updateExtensionUsingName method" />
+    <MESSAGE value="Made ArrayListDirectory and HashMapDirectory classes. Completed constructor for ArrayListDirectory." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made ArrayListDirectory and HashMapDirectory classes. Completed constructor for ArrayListDirectory." />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1581705015008">
@@ -218,26 +224,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581612165361" />
-    <state x="685" y="231" key="CommitChangelistDialog2" timestamp="1581778913217">
+    <state x="685" y="231" key="CommitChangelistDialog2" timestamp="1581778950944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="685" y="231" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581778913217" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1581778884861">
+    <state x="685" y="231" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581778950944" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1581779567460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581778884861" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1581778884861">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581779567460" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1581779567460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581778884861" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1581778884861">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581779567460" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1581779567460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581778884861" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1581778884861">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581779567460" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1581779567460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581778884861" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581779567460" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1581620215533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

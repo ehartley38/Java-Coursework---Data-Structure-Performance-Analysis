@@ -18,12 +18,19 @@ public class ArrayListDirectory implements Directory {
 
     @Override
     public void insertEntry(Entry entry) {
-        
+        members.add(entry);
 
     }
 
     @Override
     public void deleteEntryUsingName(String surname) {
+        for (int i=0; i<members.size(); i++) {
+            if (members.get(i).surname.equals(surname)) {
+                members.remove(i);
+                break;
+            }
+        }
+
 
     }
 

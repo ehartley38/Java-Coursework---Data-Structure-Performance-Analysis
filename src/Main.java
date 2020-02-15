@@ -17,6 +17,11 @@ public class Main {
 
         ArrayListDirectory ald = new ArrayListDirectory();
         System.out.println(ald.getMembers());
+        ald.insertEntry(new Entry("Hartley", "E.H", "12345"));
+        System.out.println(ald.getMembers());
+        ald.deleteEntryUsingName("Hartley");
+        System.out.println(ald.getMembers());
+
 
     }
 
