@@ -1,6 +1,6 @@
 public class Entry {
 
-    String surname, initials, extension;
+    private String surname, initials, extension;
 
 
     public Entry(String surname, String initials, String extension){

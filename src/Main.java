@@ -21,6 +21,9 @@ public class Main {
         System.out.println(ald.getMembers());
         ald.deleteEntryUsingName("Hartley");
         System.out.println(ald.getMembers());
+        ald.deleteEntryUsingExtension("54903");
+        System.out.println(ald.getMembers());
+
 
 
     }

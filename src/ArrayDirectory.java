@@ -41,7 +41,7 @@ public class ArrayDirectory implements Directory {
     public void deleteEntryUsingName(String surname) {
 
         for (int i=0; i<members.length; i++) {
-            if (members[i].surname.equals(surname)){
+            if (members[i].getSurname().equals(surname)){
                 int size = members.length;
                 List<Entry> membersList = new LinkedList<Entry>(Arrays.asList(members));
                 membersList.remove(i);
@@ -56,7 +56,7 @@ public class ArrayDirectory implements Directory {
     public void deleteEntryUsingExtension(String number) {
 
         for (int i=0; i<members.length; i++) {
-            if (number.equals(members[i].extension)) {
+            if (number.equals(members[i].getExtension())) {
                 int size = members.length;
                 List<Entry> membersList = new LinkedList<Entry>(Arrays.asList(members));
                 membersList.remove(i);
@@ -70,8 +70,8 @@ public class ArrayDirectory implements Directory {
     @Override
     public void updateExtensionUsingName(String surname, String newNumber) {
         for (int i=0; i<members.length; i++) {
-            if(members[i].surname.equals(surname)){
-                members[i].extension = newNumber;
+            if(members[i].getSurname().equals(surname)){
+                members[i].setExtension(newNumber);
             }
         }
 
@@ -80,8 +80,8 @@ public class ArrayDirectory implements Directory {
     @Override
     public String lookupExtension(String surname) {
         for (int i=0; i<members.length; i++){
-            if (members[i].surname.equals(surname)){
-                return members[i].extension;
+            if (members[i].getSurname().equals(surname)){
+                return members[i].getExtension();
             }
         }
 

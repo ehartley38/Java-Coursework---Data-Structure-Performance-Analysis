@@ -25,7 +25,7 @@ public class ArrayListDirectory implements Directory {
     @Override
     public void deleteEntryUsingName(String surname) {
         for (int i=0; i<members.size(); i++) {
-            if (members.get(i).surname.equals(surname)) {
+            if (members.get(i).getSurname().equals(surname)) {
                 members.remove(i);
                 break;
             }
@@ -36,6 +36,12 @@ public class ArrayListDirectory implements Directory {
 
     @Override
     public void deleteEntryUsingExtension(String number) {
+        for (int i=0; i<members.size(); i++){
+            if (members.get(i).getExtension().equals(number)){
+                members.remove(i);
+                break;
+            }
+        }
 
     }
 
