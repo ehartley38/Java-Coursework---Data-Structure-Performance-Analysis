@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -33,8 +34,16 @@ public class HashMapDirectory implements Directory{
 
     @Override
     public void deleteEntryUsingExtension(String number) {
-        
+        String key = null;
 
+        for (String i : extension.keySet()) {
+            if (extension.get(i).equals(number)) {
+                key = i;
+                break;
+            }
+        }
+        extension.remove(key);
+        initials.remove(key);
     }
 
     @Override

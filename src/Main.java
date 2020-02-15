@@ -30,9 +30,13 @@ public class Main {
 
         HashMapDirectory hmd = new HashMapDirectory();
         hmd.insertEntry(new Entry("Hartley", "E.H", "12345"));
+        hmd.insertEntry(new Entry("Drinkwater", "E.W", "11111"));
         System.out.println(hmd.getExtension());
         System.out.println(hmd.getInitials());
         hmd.deleteEntryUsingName("Hartley");
+        System.out.println(hmd.getExtension());
+        System.out.println(hmd.getInitials());
+        hmd.deleteEntryUsingExtension("11111");
         System.out.println(hmd.getExtension());
         System.out.println(hmd.getInitials());
 
