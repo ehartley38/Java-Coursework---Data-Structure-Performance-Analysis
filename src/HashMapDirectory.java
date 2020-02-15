@@ -20,17 +20,20 @@ public class HashMapDirectory implements Directory{
 
     @Override
     public void insertEntry(Entry entry) {
-
+        extension.put(entry.getSurname(), entry.getExtension());
+        initials.put(entry.getSurname(), entry.getInitials());
 
     }
 
     @Override
     public void deleteEntryUsingName(String surname) {
-
+        extension.remove(surname);
+        initials.remove(surname);
     }
 
     @Override
     public void deleteEntryUsingExtension(String number) {
+        
 
     }
 

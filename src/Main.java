@@ -29,9 +29,12 @@ public class Main {
         System.out.println(ald.lookupExtension("Westgarth"));*/
 
         HashMapDirectory hmd = new HashMapDirectory();
-        hmd.printHashMap(hmd.getExtension());
-        hmd.printHashMap(hmd.getInitials());
-
+        hmd.insertEntry(new Entry("Hartley", "E.H", "12345"));
+        System.out.println(hmd.getExtension());
+        System.out.println(hmd.getInitials());
+        hmd.deleteEntryUsingName("Hartley");
+        System.out.println(hmd.getExtension());
+        System.out.println(hmd.getInitials());
 
 
 
