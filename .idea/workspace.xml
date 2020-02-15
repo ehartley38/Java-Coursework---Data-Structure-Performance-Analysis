@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="306bfce7-181f-4b62-9589-296cca981413" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArrayListDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayListDirectory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HashMapDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMapDirectory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +101,7 @@
       <workItem from="1581598475697" duration="11572000" />
       <workItem from="1581620243751" duration="4264000" />
       <workItem from="1581705157513" duration="644000" />
-      <workItem from="1581772759429" duration="5793000" />
+      <workItem from="1581772759429" duration="9713000" />
     </task>
     <task id="LOCAL-00001" summary="Added the necessary files">
       <created>1581440420376</created>
@@ -200,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581782599146</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Completed toArrayList method">
+      <created>1581782706240</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1581782706240</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +232,8 @@
     <MESSAGE value="Completed InsertEntry and deleteEntryUsingName methods" />
     <MESSAGE value="Completed deleteEntryUsingExtension method and changed variables in the Entry class to private, therefore forcing me to use the getters and setters" />
     <MESSAGE value="Completed updateExtensionUsingName and lookupExtension methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed updateExtensionUsingName and lookupExtension methods" />
+    <MESSAGE value="Completed toArrayList method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed toArrayList method" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1581705015008">
@@ -247,26 +256,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581612165361" />
-    <state x="119" y="220" key="CommitChangelistDialog2" timestamp="1581782598126">
+    <state x="119" y="220" key="CommitChangelistDialog2" timestamp="1581782705342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="119" y="220" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581782598126" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1581782547577">
+    <state x="119" y="220" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581782705342" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1581788714516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581782547577" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1581782547577">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581788714516" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1581788714515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581782547577" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1581782547577">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581788714515" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1581788714515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581782547577" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1581782547577">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581788714515" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1581788714515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581782547577" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581788714515" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581782459828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -287,10 +296,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="662" y="145" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581705118778" />
-    <state x="1032" y="257" key="Vcs.Push.Dialog.v2" timestamp="1581782604024">
+    <state x="1032" y="257" key="Vcs.Push.Dialog.v2" timestamp="1581782708559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581782604024" />
+    <state x="1032" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581782708559" />
     <state x="672" y="312" key="git4idea.merge.GitPullDialog" timestamp="1581614254997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

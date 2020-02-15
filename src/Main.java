@@ -15,6 +15,7 @@ public class Main {
         System.out.println(ad.lookupExtension("Westgarth"));
         System.out.println(ad.toArrayList());*/
 
+        /* TEST the ArrayListDirectory Class
         ArrayListDirectory ald = new ArrayListDirectory();
         System.out.println(ald.getMembers());
         ald.insertEntry(new Entry("Hartley", "E.H", "12345"));
@@ -25,7 +26,11 @@ public class Main {
         System.out.println(ald.getMembers());
         ald.updateExtensionUsingName("Westgarth", "99999");
         System.out.println(ald.getMembers());
-        System.out.println(ald.lookupExtension("Westgarth"));
+        System.out.println(ald.lookupExtension("Westgarth"));*/
+
+        HashMapDirectory hmd = new HashMapDirectory();
+        hmd.printHashMap(hmd.getExtension());
+        hmd.printHashMap(hmd.getInitials());
 
 
 
