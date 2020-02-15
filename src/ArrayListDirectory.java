@@ -47,11 +47,21 @@ public class ArrayListDirectory implements Directory {
 
     @Override
     public void updateExtensionUsingName(String surname, String newNumber) {
+        for (int i=0; i<members.size(); i++) {
+            if (members.get(i).getSurname().equals(surname)) {
+                members.get(i).setExtension(newNumber);
+            }
+        }
 
     }
 
     @Override
     public String lookupExtension(String surname) {
+        for (int i=0; i<members.size(); i++) {
+            if (members.get(i).getSurname().equals(surname)) {
+                return members.get(i).getExtension();
+            }
+        }
         return null;
     }
 

@@ -23,6 +23,10 @@ public class Main {
         System.out.println(ald.getMembers());
         ald.deleteEntryUsingExtension("54903");
         System.out.println(ald.getMembers());
+        ald.updateExtensionUsingName("Westgarth", "99999");
+        System.out.println(ald.getMembers());
+        System.out.println(ald.lookupExtension("Westgarth"));
+
 
 
 
