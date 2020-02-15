@@ -67,7 +67,7 @@ public class ArrayListDirectory implements Directory {
 
     @Override
     public List<Entry> toArrayList() {
-        return null;
+        return members;
     }
 
     public ArrayList<Entry> getMembers(){
