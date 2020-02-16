@@ -13,21 +13,29 @@ public class Input {
 
         this.csvFile = csvFile;
 
-        if (typeOfDirectory.toLowerCase().equals("array")) {
-            ad = new ArrayDirectory(csvFile);
-            directoryType = "array";
-        } else if (typeOfDirectory.toLowerCase().equals("arraylist")) {
-            ald = new ArrayListDirectory(csvFile);
-            directoryType = "arrayList";
-        } else if (typeOfDirectory.toLowerCase().equals("hashmap")) {
-            hmd = new HashMapDirectory(csvFile);
-            directoryType = "hashmap";
-        } else {
-            System.out.println("Incorrect directory type selected");
-            System.exit(0);
+        switch (typeOfDirectory.toLowerCase()) {
+            case "array":
+                ad = new ArrayDirectory(csvFile);
+                directoryType = "array";
+                break;
+            case "arraylist":
+                ald = new ArrayListDirectory(csvFile);
+                directoryType = "arrayList";
+                break;
+            case "hashmap":
+                hmd = new HashMapDirectory(csvFile);
+                directoryType = "hashmap";
+                break;
+            default:
+                System.out.println("Incorrect directory type selected");
+                System.exit(0);
         }
         scanner = new Scanner(System.in);
-        getMemberDetails();
+        while (true) {
+            getMemberDetails();
+            System.out.println(Arrays.toString(ad.getMembers()));
+        }
+
 
 
 
@@ -47,12 +55,16 @@ public class Input {
         }
 
 
-        if (directoryType.equals("array")) {
-            ad.insertEntry(new Entry(surname, initials, extension));
-        } else if (directoryType.equals("arrayList")) {
-            ald.insertEntry(new Entry(surname, initials, extension));
-        } else if (directoryType.equals("hashmap")) {
-            hmd.insertEntry(new Entry(surname, initials, extension));
+        switch (directoryType) {
+            case "array":
+                ad.insertEntry(new Entry(surname, initials, extension));
+                break;
+            case "arrayList":
+                ald.insertEntry(new Entry(surname, initials, extension));
+                break;
+            case "hashmap":
+                hmd.insertEntry(new Entry(surname, initials, extension));
+                break;
         }
 
 
