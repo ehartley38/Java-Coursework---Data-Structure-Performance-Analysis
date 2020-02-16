@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="306bfce7-181f-4b62-9589-296cca981413" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArrayDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayDirectory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArrayListDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayListDirectory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashMapDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMapDirectory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +105,7 @@
       <workItem from="1581620243751" duration="4264000" />
       <workItem from="1581705157513" duration="644000" />
       <workItem from="1581772759429" duration="15462000" />
-      <workItem from="1581861230549" duration="5836000" />
+      <workItem from="1581861230549" duration="8355000" />
     </task>
     <task id="LOCAL-00001" summary="Added the necessary files">
       <created>1581440420376</created>
@@ -243,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581863226233</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Made input and output classes. Updated all 3 directory files to include the filename as a parameter in its constructor.">
+      <created>1581867954212</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1581867954212</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +275,8 @@
     <MESSAGE value="Completed InsertEntry and deleteEntryUsingName methods" />
     <MESSAGE value="Completed delete entry using extension method" />
     <MESSAGE value="Completed updateExtensionUsingName and LookupExtension methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed updateExtensionUsingName and LookupExtension methods" />
+    <MESSAGE value="Made input and output classes. Updated all 3 directory files to include the filename as a parameter in its constructor." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made input and output classes. Updated all 3 directory files to include the filename as a parameter in its constructor." />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1581705015008">
@@ -294,26 +299,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581612165361" />
-    <state x="510" y="238" width="1410" height="789" key="CommitChangelistDialog2" timestamp="1581863225213">
+    <state x="367" y="216" width="1410" height="789" key="CommitChangelistDialog2" timestamp="1581867953477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="510" y="238" width="1410" height="789" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581863225213" />
-    <state width="914" height="280" key="GridCell.Tab.0.bottom" timestamp="1581867909130">
+    <state x="367" y="216" width="1410" height="789" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581867953477" />
+    <state width="914" height="280" key="GridCell.Tab.0.bottom" timestamp="1581870312676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581867909130" />
-    <state width="914" height="280" key="GridCell.Tab.0.center" timestamp="1581867909130">
+    <state width="914" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581870312676" />
+    <state width="914" height="280" key="GridCell.Tab.0.center" timestamp="1581870312675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581867909130" />
-    <state width="914" height="280" key="GridCell.Tab.0.left" timestamp="1581867909130">
+    <state width="914" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581870312675" />
+    <state width="914" height="280" key="GridCell.Tab.0.left" timestamp="1581870312675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581867909130" />
-    <state width="914" height="280" key="GridCell.Tab.0.right" timestamp="1581867909130">
+    <state width="914" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581870312675" />
+    <state width="914" height="280" key="GridCell.Tab.0.right" timestamp="1581870312675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581867909130" />
+    <state width="914" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581870312675" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581794880197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
