@@ -48,12 +48,13 @@ public class HashMapDirectory implements Directory{
 
     @Override
     public void updateExtensionUsingName(String surname, String newNumber) {
+        extension.put(surname, newNumber);
 
     }
 
     @Override
     public String lookupExtension(String surname) {
-        return null;
+        return extension.get(surname);
     }
 
     @Override
@@ -69,9 +70,5 @@ public class HashMapDirectory implements Directory{
         return initials;
     }
 
-    public void printHashMap(HashMap<String, String> hashmap) {
-        for (String i : hashmap.keySet()) {
-            System.out.println("Key: " + i + " Value: " + hashmap.get(i));
-        }
-    }
+
 }
