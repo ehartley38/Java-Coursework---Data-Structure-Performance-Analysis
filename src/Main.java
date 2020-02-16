@@ -3,6 +3,17 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
+
+        Input input = new Input("test_data.csv", "hashmap");
+
+
+
+
+
+
+
+
+
         /* TEST the ArrayDirectory Class
         ArrayDirectory ad = new ArrayDirectory();
         ad.insertEntry(new Entry("Hartley", "E.H", "12345"));
@@ -27,7 +38,7 @@ public class Main {
         ald.updateExtensionUsingName("Westgarth", "99999");
         System.out.println(ald.getMembers());
         System.out.println(ald.lookupExtension("Westgarth"));*/
-
+        /*
         HashMapDirectory hmd = new HashMapDirectory();
         hmd.insertEntry(new Entry("Hartley", "E.H", "12345"));
         hmd.insertEntry(new Entry("Drinkwater", "E.W", "11111"));
@@ -43,7 +54,7 @@ public class Main {
         hmd.updateExtensionUsingName("Garfield", "99991");
         System.out.println(hmd.getExtension());
         System.out.println(hmd.getInitials());
-        System.out.println(hmd.lookupExtension("Garfield"));
+        System.out.println(hmd.lookupExtension("Garfield"));*/
 
 
 

@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -7,8 +6,8 @@ public class HashMapDirectory implements Directory{
     private HashMap<String, String> extension;
     private HashMap<String, String> initials;
 
-    public HashMapDirectory() {
-        CSVReader cr = new CSVReader("test_data.csv");
+    public HashMapDirectory(String csvFile) {
+        CSVReader cr = new CSVReader(csvFile);
         extension = new HashMap<String, String>();
         initials = new HashMap<String, String>();
 

@@ -5,9 +5,9 @@ public class ArrayListDirectory implements Directory {
 
     private ArrayList<Entry> members;
 
-    public ArrayListDirectory(){
+    public ArrayListDirectory(String csvFile){
         members = new ArrayList<Entry>();
-        CSVReader cr = new CSVReader("test_data.csv");
+        CSVReader cr = new CSVReader(csvFile);
 
         for (int i=0; i<cr.getLines().size(); i++){
             members.add(new Entry(cr.getLines().get(i).get(0), cr.getLines().get(i).get(1),

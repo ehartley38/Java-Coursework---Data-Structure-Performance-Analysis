@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -11,8 +10,8 @@ public class ArrayDirectory implements Directory {
     private static Object CSVReader;
     private Entry[] members;
 
-    public ArrayDirectory(){
-        CSVReader cr = new CSVReader("test_data.csv");
+    public ArrayDirectory(String csvFile){
+        CSVReader cr = new CSVReader(csvFile);
         members = new Entry[cr.getLines().size()];
 
         for (int i=0; i<cr.getLines().size(); i++){
