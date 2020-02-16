@@ -3,13 +3,13 @@ import java.util.Scanner;
 
 public class Input {
 
-   private String csvFile, directoryType;
-   private Scanner scanner;
-   private ArrayDirectory ad;
-   private ArrayListDirectory ald;
-   private HashMapDirectory hmd;
+    private String csvFile, directoryType;
+    private Scanner scanner;
+    private ArrayDirectory ad;
+    private ArrayListDirectory ald;
+    private HashMapDirectory hmd;
 
-    public Input(String csvFile, String typeOfDirectory){
+    public Input(String csvFile, String typeOfDirectory) {
 
         this.csvFile = csvFile;
 
@@ -37,12 +37,9 @@ public class Input {
         }
 
 
-
-
-
     }
 
-    private void getMemberDetails(){
+    private void getMemberDetails() {
         System.out.println("Enter the staff members surname: ");
         String surname = scanner.nextLine();
         System.out.println("Enter the staff members initials: ");
@@ -82,7 +79,6 @@ public class Input {
     public String getDirectoryType() {
         return directoryType;
     }
-
 
 
 }
