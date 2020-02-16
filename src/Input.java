@@ -28,7 +28,8 @@ public class Input {
         }
         scanner = new Scanner(System.in);
         getMemberDetails();
-        System.out.println(Arrays.toString(ad.getMembers()));
+
+
 
 
     }
@@ -38,8 +39,13 @@ public class Input {
         String surname = scanner.nextLine();
         System.out.println("Enter the staff members initials: ");
         String initials = scanner.nextLine();
-        System.out.println("Enter the staff members extension number");
+        System.out.println("Enter the staff members extension number: ");
         String extension = scanner.nextLine();
+        while (!checkExtensionFormat(extension)) {
+            System.out.println("Extension number has to begin with a 0 and be 5 digits in length. Please try again: ");
+            extension = scanner.nextLine();
+        }
+
 
         if (directoryType.equals("array")) {
             ad.insertEntry(new Entry(surname, initials, extension));
@@ -52,6 +58,9 @@ public class Input {
 
     }
 
+    private boolean checkExtensionFormat(String extension) {
+        return extension.substring(0, 1).matches("0") && extension.length() == 5;
+    }
 
 
     public String getCsvFile() {
