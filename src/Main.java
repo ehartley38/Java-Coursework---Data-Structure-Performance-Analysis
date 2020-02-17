@@ -5,7 +5,9 @@ public class Main {
     public static void main(String[] args) {
 
         String directoryType = "hashmap";
-        Input input = new Input("test_data.csv", directoryType);
+        //Input input = new Input("test_data.csv", directoryType);
+        PerformanceTesting pt = new PerformanceTesting("Array");
+        System.out.println(pt.arrayTest());
 
 
 
