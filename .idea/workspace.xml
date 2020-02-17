@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="306bfce7-181f-4b62-9589-296cca981413" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PerformanceTesting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArrayDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayDirectory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HashMapDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMapDirectory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -280,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581873252836</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Updated menu to include all relevant methods. Implemented DeleteEntryUsingName, DeleteEntryUsingExtension and UpdateExtensionUsingnName methods into the menu">
+      <created>1581966947275</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1581966947275</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +317,8 @@
     <MESSAGE value="Updated input class so you can now input members details" />
     <MESSAGE value="Added method to check if extension is of correct format. Program keeps asking you to input a valid extension number until you input a valid one now" />
     <MESSAGE value="You can now add multiple different members details" />
-    <option name="LAST_COMMIT_MESSAGE" value="You can now add multiple different members details" />
+    <MESSAGE value="Updated menu to include all relevant methods. Implemented DeleteEntryUsingName, DeleteEntryUsingExtension and UpdateExtensionUsingnName methods into the menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated menu to include all relevant methods. Implemented DeleteEntryUsingName, DeleteEntryUsingExtension and UpdateExtensionUsingnName methods into the menu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1581705015008">
@@ -335,26 +341,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581612165361" />
-    <state x="367" y="216" width="1410" height="789" key="CommitChangelistDialog2" timestamp="1581966914668">
+    <state x="367" y="216" width="1410" height="789" key="CommitChangelistDialog2" timestamp="1581966946387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="367" y="216" width="1410" height="789" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581966914668" />
-    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1581966914685">
+    <state x="367" y="216" width="1410" height="789" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581966946387" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1581969179084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581966914685" />
-    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1581966914684">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581969179084" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1581969179084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581966914684" />
-    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1581966914684">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581969179084" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1581969179084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581966914684" />
-    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1581966914684">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581969179084" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1581969179084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581966914684" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581969179084" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581794880197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -379,10 +385,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="662" y="145" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581705118778" />
-    <state x="1032" y="257" key="Vcs.Push.Dialog.v2" timestamp="1581873256414">
+    <state x="1032" y="257" key="Vcs.Push.Dialog.v2" timestamp="1581966950587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581873256414" />
+    <state x="1032" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581966950587" />
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581964968394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

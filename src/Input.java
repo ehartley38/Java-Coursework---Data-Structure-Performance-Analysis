@@ -93,12 +93,15 @@ public class Input {
                 break;
             case "3":
                 deleteStaffMemberUsingExtension();
+                break;
             case "4":
                 updateExtensionUsingName();
+                break;
             case "5":
-                System.exit(0);
+                lookupExtensionUsingName();
+                break;
             case "6":
-                System.exit(0);
+                System.out.println("Printing Directory");
             case "7":
                 System.exit(0);
         }
@@ -166,6 +169,24 @@ public class Input {
                 break;
         }
         System.out.println("Updated");
+    }
+
+    private void lookupExtensionUsingName() {
+        System.out.println("Enter a surname to see their extension number: ");
+        String surname = scanner.nextLine();
+
+        switch (directoryType) {
+            case "array":
+                System.out.println(ad.lookupExtension(surname));
+                break;
+            case "arrayList":
+                System.out.println(ald.lookupExtension(surname));
+                break;
+            case "hashmap":
+                System.out.println(hmd.lookupExtension(surname));
+                break;
+        }
+
     }
 
     public String getCsvFile() {

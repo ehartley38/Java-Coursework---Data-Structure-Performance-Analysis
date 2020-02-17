@@ -12,8 +12,8 @@ public class HashMapDirectory implements Directory{
         initials = new HashMap<String, String>();
 
         for (int i=0; i<cr.getLines().size(); i++) {
-            extension.put(cr.getLines().get(i).get(0), cr.getLines().get(i).get(1));
-            initials.put(cr.getLines().get(i).get(0), cr.getLines().get(i).get(2));
+            extension.put(cr.getLines().get(i).get(0), cr.getLines().get(i).get(2));
+            initials.put(cr.getLines().get(i).get(0), cr.getLines().get(i).get(1));
         }
     }
 
