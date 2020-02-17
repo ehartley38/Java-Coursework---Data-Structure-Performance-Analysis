@@ -13,6 +13,7 @@ public class StopWatch {
      * accumulated.
      */
     public StopWatch() {
+
         reset();
     }
 

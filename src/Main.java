@@ -14,6 +14,7 @@ public class Main {
 
 
 
+
         /* TEST the ArrayDirectory Class
         ArrayDirectory ad = new ArrayDirectory();
         ad.insertEntry(new Entry("Hartley", "E.H", "12345"));
