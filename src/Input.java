@@ -35,7 +35,8 @@ public class Input {
         scanner = new Scanner(System.in);
         Boolean run = true;
         while (run) {
-            System.out.println("Menu\nInsert New Entry - 1\nPrint Directory - 2\nExit - 3");
+            System.out.println("Menu\nInsert New Entry - 1\nDelete Entry Using Name - 2\nDelete Entry Using Extension - 3" +
+                    "\nUpdate Extension Using Name - 4\nLookup Extension - 5\nPrint Directory - 6\nExit - 7");
             String choice = scanner.nextLine();
             getDecision(choice);
         }
@@ -88,14 +89,84 @@ public class Input {
                 insertStaffMember();
                 break;
             case "2":
-                System.out.println("Print array directory");
+                deleteStaffMemberUsingName();
                 break;
             case "3":
+                deleteStaffMemberUsingExtension();
+            case "4":
+                updateExtensionUsingName();
+            case "5":
+                System.exit(0);
+            case "6":
+                System.exit(0);
+            case "7":
                 System.exit(0);
         }
     }
 
+    private void deleteStaffMemberUsingName() {
+        System.out.println("Enter the surname of the staff member you wish to delete: ");
+        String surname = scanner.nextLine();
 
+        switch (directoryType) {
+            case "array":
+                ad.deleteEntryUsingName(surname);
+                break;
+            case "arrayList":
+                ald.deleteEntryUsingName(surname);
+                break;
+            case "hashmap":
+                hmd.deleteEntryUsingName(surname);
+                break;
+        }
+        System.out.println("Deleted");
+
+    }
+
+    private void deleteStaffMemberUsingExtension() {
+        System.out.println("Enter the extension of the staff member you wish to delete: ");
+        String extension = scanner.nextLine();
+
+        switch (directoryType) {
+            case "array":
+                ad.deleteEntryUsingExtension(extension);
+                break;
+            case "arrayList":
+                ald.deleteEntryUsingExtension(extension);
+                break;
+            case "hashmap":
+                hmd.deleteEntryUsingExtension(extension);
+                break;
+        }
+        System.out.println("Deleted");
+
+    }
+
+    private void updateExtensionUsingName() {
+        System.out.println("Enter the surname of the staff member whose extension you wish to update: ");
+        String surname = scanner.nextLine();
+        String extension;
+        assert false;
+        System.out.println("Enter the new extension: ");
+        extension = scanner.nextLine();
+        while (!checkExtensionFormat(extension)) {
+            System.out.print("Extension is of wrong format. Please try again");
+            extension = scanner.nextLine();
+        }
+
+        switch (directoryType) {
+            case "array":
+                ad.updateExtensionUsingName(surname, extension);
+                break;
+            case "arrayList":
+                ald.updateExtensionUsingName(surname, extension);
+                break;
+            case "hashmap":
+                hmd.updateExtensionUsingName(surname, extension);
+                break;
+        }
+        System.out.println("Updated");
+    }
 
     public String getCsvFile() {
         return csvFile;
