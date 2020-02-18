@@ -10,9 +10,15 @@ public class Main {
 
         Test insertionTest = new Test("array", "dataInsertion");
         Test lookupTest = new Test("hashmap", "dataLookup");
-        System.out.println(lookupTest.bestCase);
-        System.out.println(lookupTest.worstCase);
-        System.out.println(lookupTest.averageTime);
+        Test dataDeletionWithNameTest = new Test("arraylist", "dataDeletionWithName");
+        Test dataDeletionWithExtension = new Test("hashmap", "dataDeletionWithExtension");
+
+        System.out.println(dataDeletionWithExtension.bestCase);
+        System.out.println(dataDeletionWithExtension.worstCase);
+        System.out.println(dataDeletionWithExtension.averageTime);
+        /*System.out.println(dataDeletionWithNameTest.bestCase);
+        System.out.println(dataDeletionWithNameTest.worstCase);
+        System.out.println(dataDeletionWithNameTest.averageTime);*/
 
 
 
