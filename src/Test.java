@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Test {
 
     private String directoryType, testType;
@@ -19,6 +21,7 @@ public class Test {
                 dataInsertionTest(directoryType);
                 break;
             case "dataLookup":
+                dataLookupTest(directoryType);
 
                 break;
             case "dataDeletionWithName":
@@ -78,6 +81,7 @@ public class Test {
                     hmd.insertEntry(new Entry("Hartley", "E.H", "01234"));
                     stopwatch.stop();
                     updateTimes();
+
                 }
                 averageTime = totalTime / testCycles;
         }
@@ -88,7 +92,60 @@ public class Test {
 
 
 
-    public void dataLookupTest() {
+    public void dataLookupTest(String directoryType) {
+
+        switch (directoryType) {
+            case "array":
+                ArrayDirectory ad = new ArrayDirectory("test_data.csv");
+                Entry[] membersArray = ad.getMembers();
+                String middleSurnameArray;
+
+                middleSurnameArray = membersArray[(int) Math.ceil(membersArray.length/2)].getSurname();
+                for (int i=0; i<=testCycles; i++) {
+                    stopwatch.start();
+                    ad.lookupExtension(middleSurnameArray);
+                    stopwatch.stop();
+                    updateTimes();
+                }
+                averageTime = totalTime / testCycles;
+
+
+            case "arraylist":
+                ArrayListDirectory ald = new ArrayListDirectory("test_data.csv");
+                String middleSurnameArrayList;
+                ArrayList<Entry> membersArrayList = ald.getMembers();
+
+                middleSurnameArrayList = membersArrayList.get((int) Math.ceil(ald.getMembers().size()/2)).getSurname();
+                for (int i=0; i<=testCycles; i++) {
+                    stopwatch.start();
+                    ald.lookupExtension(middleSurnameArrayList);
+                    stopwatch.stop();
+                    updateTimes();
+                }
+                averageTime = totalTime / testCycles;
+
+            case "hashmap":
+                HashMapDirectory hmd = new HashMapDirectory("test_data.csv");
+                String middleSurnameHashMap = null;
+                int middleSurnameLocation = (int) Math.ceil(hmd.getExtension().size()/2);
+                int count = 1;
+                
+                for (String i : hmd.getExtension().keySet()) {
+                    if (count == middleSurnameLocation) {
+                        middleSurnameHashMap = i;
+                    }
+                    
+                }
+
+
+                for (int i=0; i<=testCycles; i++) {
+                    stopwatch.start();
+                    hmd.lookupExtension(middleSurnameHashMap);
+                    stopwatch.stop();
+                    updateTimes();
+                }
+                averageTime = totalTime / testCycles;
+        }
 
     }
 
