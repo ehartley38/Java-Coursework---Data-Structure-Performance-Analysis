@@ -8,7 +8,7 @@ public class Main {
         //Input input = new Input("test_data.csv", directoryType);
         PerformanceTesting pt = new PerformanceTesting("Array");
 
-        Test insertionTest = new Test("array", "dataInsertion");
+        Test insertionTest = new Test("hashmap", "dataInsertion");
         System.out.println(insertionTest.bestCase);
         System.out.println(insertionTest.worstCase);
         System.out.println(insertionTest.averageTime);

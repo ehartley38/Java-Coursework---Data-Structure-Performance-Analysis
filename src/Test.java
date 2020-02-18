@@ -54,24 +54,32 @@ public class Test {
                     stopwatch.start();
                     ad.insertEntry(new Entry("Hartley", "E.H", "01234"));
                     stopwatch.stop();
-                    totalTime += stopwatch.getElapsedTime();
-                    if (stopwatch.getElapsedTime() < bestCase) {
-                        bestCase = stopwatch.getElapsedTime();
-                    }
-                    if (stopwatch.getElapsedTime() > worstCase) {
-                        worstCase = stopwatch.getElapsedTime();
-                    }
-                    stopwatch.reset();
+                    updateTimes();
                 }
                 averageTime = totalTime / testCycles;
 
 
-            case "arrayList":
+            case "arraylist":
+                ArrayListDirectory ald = new ArrayListDirectory("test_data.csv");
 
-                break;
+                for (int i=0; i<=testCycles; i++) {
+                    stopwatch.start();
+                    ald.insertEntry(new Entry("Hartley", "E.H", "01234"));
+                    stopwatch.stop();
+                    updateTimes();
+                }
+                averageTime = totalTime / testCycles;
+
             case "hashmap":
+                HashMapDirectory hmd = new HashMapDirectory("test_data.csv");
 
-                break;
+                for (int i=0; i<=testCycles; i++) {
+                    stopwatch.start();
+                    hmd.insertEntry(new Entry("Hartley", "E.H", "01234"));
+                    stopwatch.stop();
+                    updateTimes();
+                }
+                averageTime = totalTime / testCycles;
         }
 
 
@@ -99,4 +107,15 @@ public class Test {
     }
 
 
+
+    public void updateTimes() {
+        totalTime += stopwatch.getElapsedTime();
+        if (stopwatch.getElapsedTime() < bestCase) {
+            bestCase = stopwatch.getElapsedTime();
+        }
+        if (stopwatch.getElapsedTime() > worstCase) {
+            worstCase = stopwatch.getElapsedTime();
+        }
+        stopwatch.reset();
+    }
 }
