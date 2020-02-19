@@ -20,7 +20,7 @@ public class Input {
                 break;
             case "arraylist":
                 ald = new ArrayListDirectory(csvFile);
-                directoryType = "arrayList";
+                directoryType = "arraylist";
                 break;
             case "hashmap":
                 hmd = new HashMapDirectory(csvFile);

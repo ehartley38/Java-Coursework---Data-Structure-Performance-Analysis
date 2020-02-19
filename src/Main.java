@@ -1,22 +1,28 @@
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 
-        String directoryType = "hashmap";
-        //Input input = new Input("test_data.csv", directoryType);
-        PerformanceTesting pt = new PerformanceTesting();
+        String directoryType = null;
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Choose you're directory type:\narray - 1\narrayList - 2\nhashMap - 3");
+        String directoryChoice = scanner.nextLine();
+        if (directoryChoice.equals("1")) {
+            directoryType = "array";
+        } else if (directoryChoice.equals("2")) {
+            directoryType = "arraylist";
+        } else if (directoryChoice.equals("3")) {
+            directoryType = "hashmap";
+        } else {System.exit(0);}
+
+        Input input = new Input("test_data.csv", directoryType);
         Output out = new Output("AnalysisFile.txt");
 
-        Test lookupTest = new Test("array", "dataLookup");
-        Test insertionTest = new Test("array", "dataInsertion");
-
-        System.out.println(lookupTest.averageTime);
-        System.out.println(insertionTest.averageTime);
 
 /*      TEST THE PERFORMANCE OF EACH TEST
         System.out.println(insertionTest.bestCase);
@@ -81,5 +87,6 @@ public class Main {
 
 
     }
+
 
 }

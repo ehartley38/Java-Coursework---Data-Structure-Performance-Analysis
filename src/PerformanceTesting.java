@@ -17,8 +17,6 @@ public class PerformanceTesting {
     public PerformanceTesting() throws FileNotFoundException {
 
 
-
-
         arrayInsertionTest = new Test("array","dataInsertion");
         arrayLookupTest = new Test("array", "dataLookup");
         arrayDeletionTestName = new Test("array", "dataDeletionWithName");
