@@ -10,8 +10,13 @@ public class Main {
         //Input input = new Input("test_data.csv", directoryType);
         PerformanceTesting pt = new PerformanceTesting();
 
-        Output out = new Output("test.txt");
+        Output out = new Output("AnalysisFile.txt");
 
+        Test lookupTest = new Test("array", "dataLookup");
+        Test insertionTest = new Test("array", "dataInsertion");
+
+        System.out.println(lookupTest.averageTime);
+        System.out.println(insertionTest.averageTime);
 
 /*      TEST THE PERFORMANCE OF EACH TEST
         System.out.println(insertionTest.bestCase);
