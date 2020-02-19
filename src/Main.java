@@ -9,6 +9,8 @@ public class Main {
 
         String directoryType = null;
 
+        Output out = new Output("AnalysisTests.txt");
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose you're directory type:\narray - 1\narrayList - 2\nhashMap - 3");
         String directoryChoice = scanner.nextLine();
@@ -21,7 +23,7 @@ public class Main {
         } else {System.exit(0);}
 
         Input input = new Input("test_data.csv", directoryType);
-        Output out = new Output("AnalysisFile.txt");
+
 
 
 /*      TEST THE PERFORMANCE OF EACH TEST
