@@ -1,6 +1,7 @@
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 
 public class Output {
 
@@ -94,5 +95,17 @@ public class Output {
     }
 
 
+    public void printDirectoryASCII(ArrayList<Entry> members) {
+        System.out.println("+---------+----------+-----------+");
+        System.out.println("| Surname | Initials | Extension |");
+
+        for (int i=0; i<members.size(); i++) {
+            System.out.println("|" + members.get(i).getSurname() + "|" + members.get(i).getInitials() + "|" +
+                    members.get(i).getExtension() + "|");
+        }
+
+        System.out.println("+---------+----------+-----------+");
+
+    }
 
 }

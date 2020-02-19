@@ -1,5 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -7,6 +8,13 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 
+        Output out = new Output("AnalysisTests.txt");
+        ArrayDirectory ad = new ArrayDirectory("test_data.csv");
+
+        out.printDirectoryASCII((ArrayList<Entry>) ad.toArrayList());
+
+
+        /*
         String directoryType = null;
 
         Output out = new Output("AnalysisTests.txt");
@@ -14,15 +22,21 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose you're directory type:\narray - 1\narrayList - 2\nhashMap - 3");
         String directoryChoice = scanner.nextLine();
-        if (directoryChoice.equals("1")) {
-            directoryType = "array";
-        } else if (directoryChoice.equals("2")) {
-            directoryType = "arraylist";
-        } else if (directoryChoice.equals("3")) {
-            directoryType = "hashmap";
-        } else {System.exit(0);}
+        switch (directoryChoice) {
+            case "1":
+                directoryType = "array";
+                break;
+            case "2":
+                directoryType = "arraylist";
+                break;
+            case "3":
+                directoryType = "hashmap";
+                break;
+            default:
+                System.exit(0);
+        }
 
-        Input input = new Input("test_data.csv", directoryType);
+        Input input = new Input("test_data.csv", directoryType);*/
 
 
 
