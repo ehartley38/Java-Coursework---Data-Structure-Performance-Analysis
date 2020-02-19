@@ -237,6 +237,7 @@ public class Test {
                 for (String i : hmd.getExtension().keySet()) {
                     if (count == middleSurnameLocation) {
                         middleSurnameHashMap = i;
+                        break;
                     }
                     count += 1;
 

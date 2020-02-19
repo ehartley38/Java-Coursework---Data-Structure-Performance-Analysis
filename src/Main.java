@@ -1,32 +1,34 @@
+import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 
         String directoryType = "hashmap";
         //Input input = new Input("test_data.csv", directoryType);
-        PerformanceTesting pt = new PerformanceTesting("Array");
+        PerformanceTesting pt = new PerformanceTesting();
 
-        Test insertionTest = new Test("array", "dataInsertion");
-        Test lookupTest = new Test("hashmap", "dataLookup");
-        Test dataDeletionWithNameTest = new Test("arraylist", "dataDeletionWithName");
-        Test dataDeletionWithExtension = new Test("hashmap", "dataDeletionWithExtension");
+        Output out = new Output("test.txt");
+
+
+/*      TEST THE PERFORMANCE OF EACH TEST
+        System.out.println(insertionTest.bestCase);
+        System.out.println(insertionTest.worstCase);
+        System.out.println(insertionTest.averageTime);
+
+        System.out.println(lookupTest.bestCase);
+        System.out.println(lookupTest.worstCase);
+        System.out.println(lookupTest.averageTime);
+
+        System.out.println(dataDeletionWithNameTest.bestCase);
+        System.out.println(dataDeletionWithNameTest.worstCase);
+        System.out.println(dataDeletionWithNameTest.averageTime);
 
         System.out.println(dataDeletionWithExtension.bestCase);
         System.out.println(dataDeletionWithExtension.worstCase);
-        System.out.println(dataDeletionWithExtension.averageTime);
-        /*System.out.println(dataDeletionWithNameTest.bestCase);
-        System.out.println(dataDeletionWithNameTest.worstCase);
-        System.out.println(dataDeletionWithNameTest.averageTime);*/
-
-
-
-
-
-
-
-
+        System.out.println(dataDeletionWithExtension.averageTime);*/
 
 
         /* TEST the ArrayDirectory Class
