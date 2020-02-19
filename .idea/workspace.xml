@@ -4,8 +4,6 @@
     <list default="true" id="306bfce7-181f-4b62-9589-296cca981413" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,98 +11,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/PerformanceTesting.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" selection-start-line="17" selection-end-line="17" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/ArrayDirectory.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="130">
-                  <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/ArrayListDirectory.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/HashMapDirectory.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="935">
-                  <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#1613#1614#0" expanded="true" />
-                    <element signature="e#1640#1641#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Input.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-136">
-                  <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Output.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="578">
-                  <caret line="102" column="64" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#printDataInsertionResults#0;class#Output#0" />
-                    <element signature="method#printDataLookupResults#0;class#Output#0" />
-                    <element signature="method#printDataDeletionByNameResults#0;class#Output#0" />
-                    <element signature="method#printDataDeletionByExtensionResults#0;class#Output#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -122,53 +28,14 @@
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/Test.java" />
-        <option value="$PROJECT_DIR$/test.txt" />
-        <option value="$PROJECT_DIR$/src/PerformanceTesting.java" />
-        <option value="$PROJECT_DIR$/src/Input.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Output.java" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="965" />
-    <option name="y" value="-11" />
+    <option name="x" value="-7" />
     <option name="width" value="1294" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectId" id="1XfmG2OtTs21oZrVc7yoblaKTpM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="project-2.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-2.1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-2.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-2.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Course" />
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -192,18 +59,6 @@
       <recent name="C:\Users\ehart\IdeaProjects\project-2" />
       <recent name="C:\Users\ehart\IdeaProjects\project-2\src" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="ArrayDirectory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -268,8 +123,7 @@
       <workItem from="1582040087561" duration="2727000" />
       <workItem from="1582044672208" duration="4184000" />
       <workItem from="1582059087612" duration="861000" />
-      <workItem from="1582060018926" duration="2149000" />
-      <workItem from="1582131924382" duration="1686000" />
+      <workItem from="1582060018926" duration="2907000" />
     </task>
     <task id="LOCAL-00001" summary="Added the necessary files">
       <created>1581440420376</created>
@@ -453,114 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1582045295228</updated>
     </task>
-    <task id="LOCAL-00027" summary="Created output class. Initialised all tests inside performance test. Began basis for wiriting to txt file">
-      <created>1582123987834</created>
+    <task id="LOCAL-00027" summary="Almost completed all tests. Need to double check dataDeletionWithExtension test, especially for hash maps">
+      <created>1582062927881</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1582123987834</updated>
+      <updated>1582062927881</updated>
     </task>
-    <task id="LOCAL-00028" summary="Output class now writes all results to txt file">
-      <created>1582127869700</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1582127869700</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Updated menu so you can first choose what directory type you want from within the command line">
-      <created>1582129620058</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1582129620058</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Changed position of output declaration so that as soon as the program starts, outputs are generated">
-      <created>1582129902757</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1582129902757</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Got very basic ascii table working">
-      <created>1582133423087</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1582133423087</updated>
-    </task>
-    <option name="localTasksCounter" value="32" />
+    <option name="localTasksCounter" value="28" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11932000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0918124" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289166" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32735777" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Educational.CheckDetails" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.33125487" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32967034" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2617504" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32735777" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Educational.CheckDetails" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3320251" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32967034" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -569,6 +324,11 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added function that reads csv file and prints contents out" />
+    <MESSAGE value="Updated CSVReader class to parse info from csv file into a 2D array" />
+    <MESSAGE value="Cleaned up CSVReader class" />
+    <MESSAGE value="Added individual objects of each staff member to an array, with all their information cotained within it as well." />
+    <MESSAGE value="Completed insertEntry method and added main class" />
     <MESSAGE value="Fully completed insert entry method and tested by printing the array before and after adding a new staff member" />
     <MESSAGE value="Started delete entry using name method funcctionality" />
     <MESSAGE value="Completed deleteEntryUsingExtension method" />
@@ -588,211 +348,89 @@
     <MESSAGE value="Updated menu to include all relevant methods. Implemented DeleteEntryUsingName, DeleteEntryUsingExtension and UpdateExtensionUsingnName methods into the menu" />
     <MESSAGE value="Completed all options in the menu to have full functionality" />
     <MESSAGE value="Completed tests for data insettion time for all 3 directory types. However, theres still an error of the best case time always being zero." />
-    <MESSAGE value="Created output class. Initialised all tests inside performance test. Began basis for wiriting to txt file" />
-    <MESSAGE value="Output class now writes all results to txt file" />
-    <MESSAGE value="Updated menu so you can first choose what directory type you want manually" />
-    <MESSAGE value="Updated menu so you can first choose what directory type you want from within the command line" />
-    <MESSAGE value="Changed position of output declaration so that as soon as the program starts, outputs are generated" />
-    <MESSAGE value="Got very basic ascii table working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got very basic ascii table working" />
+    <MESSAGE value="Almost completed all tests. Need to double check dataDeletionWithExtension test, especially for hash maps" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost completed all tests. Need to double check dataDeletionWithExtension test, especially for hash maps" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="179" key="#Project_Structure" />
-    <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" />
-    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
-    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="1245" y="208" key="#com.intellij.ide.util.MemberChooser" />
-    <state x="1245" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" />
-    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" />
-    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" />
-    <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="367" y="216" width="1410" height="789" key="CommitChangelistDialog2" />
-    <state x="367" y="216" width="1410" height="789" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" />
-    <state x="756" y="232" key="RollbackChangesDialog" />
-    <state x="756" y="232" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="662" y="145" key="SettingsEditor" />
-    <state x="662" y="145" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" />
-    <state x="1032" y="257" key="Vcs.Push.Dialog.v2" />
-    <state x="1032" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" />
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" />
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" />
-    <state x="672" y="312" key="git4idea.merge.GitPullDialog" />
-    <state x="672" y="312" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="1182" y="143" key="refactoring.ChangeSignatureDialog" />
-    <state x="1182" y="143" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.txt" />
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="80" column="41" lean-forward="true" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
-          <folding>
-            <element signature="method#dataDeletionWithNameTest#0;class#Test#0" />
-            <element signature="method#dataDeletionWithExtensionTest#0;class#Test#0" />
-            <element signature="e#9139#9140#0" expanded="true" />
-            <element signature="e#9170#9171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnalysisFile.txt" />
-    <entry file="file://$PROJECT_DIR$/AnalysisTests.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HashMapDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-          <folding>
-            <element signature="e#1613#1614#0" expanded="true" />
-            <element signature="e#1640#1641#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArrayListDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArrayDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PerformanceTesting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Output.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="102" column="64" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#printDataInsertionResults#0;class#Output#0" />
-            <element signature="method#printDataLookupResults#0;class#Output#0" />
-            <element signature="method#printDataDeletionByNameResults#0;class#Output#0" />
-            <element signature="method#printDataDeletionByExtensionResults#0;class#Output#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state x="552" y="179" key="#Project_Structure" timestamp="1582058979791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1582058979791" />
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581705021187">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581705021187" />
+    <state x="1245" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1581964278475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1245" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581964278475" />
+    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581960929364">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581960929364" />
+    <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581612165361">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581612165361" />
+    <state x="234" y="204" width="1410" height="789" key="CommitChangelistDialog2" timestamp="1582062926827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="234" y="204" width="1410" height="789" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582062926827" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1582064769145">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582064769145" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1582064769145">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582064769145" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1582064769145">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582064769145" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1582064769145">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582064769145" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581794880197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581794880197" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1581794880197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581794880197" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1581794880197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581794880197" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1581794880197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581794880197" />
+    <state x="756" y="232" key="RollbackChangesDialog" timestamp="1581965014188">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="232" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581965014188" />
+    <state x="662" y="145" key="SettingsEditor" timestamp="1581705118778">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="145" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581705118778" />
+    <state x="1032" y="257" key="Vcs.Push.Dialog.v2" timestamp="1582062930801">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582062930801" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582145379855">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582145379855" />
+    <state x="672" y="312" key="git4idea.merge.GitPullDialog" timestamp="1581964981194">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="312" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581964981194" />
+    <state x="1182" y="143" key="refactoring.ChangeSignatureDialog" timestamp="1581616871322">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1182" y="143" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581616871322" />
   </component>
 </project>
