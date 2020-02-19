@@ -106,6 +106,8 @@ public class Output {
 
         System.out.println("+---------+----------+-----------+");
 
+        //Update hashmap to array list method, make ascii table neater, implement table into cli
+
     }
 
 }

@@ -10,8 +10,9 @@ public class Main {
 
         Output out = new Output("AnalysisTests.txt");
         ArrayDirectory ad = new ArrayDirectory("test_data.csv");
+        ArrayListDirectory ald = new ArrayListDirectory("test_data.csv");
 
-        out.printDirectoryASCII((ArrayList<Entry>) ad.toArrayList());
+        out.printDirectoryASCII((ArrayList<Entry>) ald.toArrayList());
 
 
         /*

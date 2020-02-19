@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="306bfce7-181f-4b62-9589-296cca981413" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Output.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +21,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+                <state relative-caret-position="238">
+                  <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -91,8 +89,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Output.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="595">
-                  <caret line="103" column="54" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
+                <state relative-caret-position="578">
+                  <caret line="102" column="64" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#printDataInsertionResults#0;class#Output#0" />
@@ -271,7 +269,7 @@
       <workItem from="1582044672208" duration="4184000" />
       <workItem from="1582059087612" duration="861000" />
       <workItem from="1582060018926" duration="2149000" />
-      <workItem from="1582131924382" duration="1281000" />
+      <workItem from="1582131924382" duration="1686000" />
     </task>
     <task id="LOCAL-00001" summary="Added the necessary files">
       <created>1581440420376</created>
@@ -483,11 +481,18 @@
       <option name="project" value="LOCAL" />
       <updated>1582129902757</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Got very basic ascii table working">
+      <created>1582133423087</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1582133423087</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11527000" />
+    <option name="totallyTimeSpent" value="11932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -564,7 +569,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Completed insertEntry method and added main class" />
     <MESSAGE value="Fully completed insert entry method and tested by printing the array before and after adding a new staff member" />
     <MESSAGE value="Started delete entry using name method funcctionality" />
     <MESSAGE value="Completed deleteEntryUsingExtension method" />
@@ -589,7 +593,8 @@
     <MESSAGE value="Updated menu so you can first choose what directory type you want manually" />
     <MESSAGE value="Updated menu so you can first choose what directory type you want from within the command line" />
     <MESSAGE value="Changed position of output declaration so that as soon as the program starts, outputs are generated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed position of output declaration so that as soon as the program starts, outputs are generated" />
+    <MESSAGE value="Got very basic ascii table working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got very basic ascii table working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" />
@@ -689,8 +694,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -706,8 +711,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Output.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="103" column="54" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
+        <state relative-caret-position="578">
+          <caret line="102" column="64" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#printDataInsertionResults#0;class#Output#0" />
