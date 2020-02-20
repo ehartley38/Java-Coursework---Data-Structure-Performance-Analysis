@@ -7,8 +7,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 //For software engineering best practice, you should also include some evidence of correctness testing for each implementation of the Directory.
-//produce some documentation that contains a discussion about your findings and summarises your results.
-// see if I can have a look at csv reader class to make it more my own 500 words
+// see if I can have a look at csv reader class to make it more my own
 //comment my code
 //README file explaining how to run the program
 //Delete duplicates
