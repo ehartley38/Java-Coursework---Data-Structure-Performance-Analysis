@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -58,7 +59,11 @@ public class HashMapDirectory implements Directory{
 
     @Override
     public List<Entry> toArrayList() {
-        return null;
+        ArrayList<Entry> members = new ArrayList<>();
+        for (String i : extension.keySet()) {
+            members.add(new Entry(i, initials.get(i), extension.get(i)));
+        }
+        return members;
     }
 
     public HashMap<String, String> getExtension() {

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8769de05-e448-412e-bb98-3f131eb08f5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HashMapDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMapDirectory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Output.java" afterDir="false" />
     </list>
@@ -124,7 +124,7 @@
       <workItem from="1582060018926" duration="2907000" />
       <workItem from="1582148962735" duration="27000" />
       <workItem from="1582150312317" duration="599000" />
-      <workItem from="1582189982537" duration="1624000" />
+      <workItem from="1582189982537" duration="2868000" />
     </task>
     <task id="LOCAL-00001" summary="Added the necessary files">
       <created>1581440420376</created>
@@ -315,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582062927881</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Updated directory in ascii table format to be neater">
+      <created>1582193246035</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1582193246036</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +332,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added function that reads csv file and prints contents out" />
     <MESSAGE value="Updated CSVReader class to parse info from csv file into a 2D array" />
     <MESSAGE value="Cleaned up CSVReader class" />
     <MESSAGE value="Added individual objects of each staff member to an array, with all their information cotained within it as well." />
@@ -350,7 +356,8 @@
     <MESSAGE value="Completed all options in the menu to have full functionality" />
     <MESSAGE value="Completed tests for data insettion time for all 3 directory types. However, theres still an error of the best case time always being zero." />
     <MESSAGE value="Almost completed all tests. Need to double check dataDeletionWithExtension test, especially for hash maps" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost completed all tests. Need to double check dataDeletionWithExtension test, especially for hash maps" />
+    <MESSAGE value="Updated directory in ascii table format to be neater" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated directory in ascii table format to be neater" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1582058979791">
@@ -373,26 +380,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581612165361" />
-    <state x="234" y="204" width="1410" height="789" key="CommitChangelistDialog2" timestamp="1582062926827">
+    <state x="234" y="204" width="1410" height="789" key="CommitChangelistDialog2" timestamp="1582193245192">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="234" y="204" width="1410" height="789" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582062926827" />
-    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1582193195188">
+    <state x="234" y="204" width="1410" height="789" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582193245192" />
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1582194241897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582193195188" />
-    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1582193195188">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582194241897" />
+    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1582194241897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582193195188" />
-    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1582193195188">
+    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582194241897" />
+    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1582194241897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582193195188" />
-    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1582193195188">
+    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582194241897" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1582194241897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582193195188" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582194241897" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581794880197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

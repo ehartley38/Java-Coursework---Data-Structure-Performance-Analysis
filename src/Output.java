@@ -108,7 +108,7 @@ public class Output {
         }
         System.out.println("+--------------------+--------------------+--------------------+");
 
-        //Update hashmap to array list method, make ascii table neater, implement table into cli, get rid of linkedlist in arrayDirectory
+        //Update hashmap to array list method, implement table into cli, get rid of linkedlist in arrayDirectory
 
     }
 

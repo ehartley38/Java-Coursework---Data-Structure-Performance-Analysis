@@ -9,10 +9,11 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 
         Output out = new Output("AnalysisTests.txt");
-       // ArrayDirectory ad = new ArrayDirectory("test_data.csv");
+        ArrayDirectory ad = new ArrayDirectory("test_data.csv");
         ArrayListDirectory ald = new ArrayListDirectory("test_data.csv");
+        HashMapDirectory hmd = new HashMapDirectory(("test_data.csv"));
 
-        out.printDirectoryASCII((ArrayList<Entry>) ald.toArrayList());
+        out.printDirectoryASCII((ArrayList<Entry>) hmd.toArrayList());
 
 
         /*
