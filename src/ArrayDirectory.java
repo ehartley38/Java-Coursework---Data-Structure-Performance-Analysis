@@ -38,31 +38,30 @@ public class ArrayDirectory implements Directory {
 
     @Override
     public void deleteEntryUsingName(String surname) {
-
-        for (int i=0; i<members.length; i++) {
-            if (members[i].getSurname().equals(surname)){
-                int size = members.length;
-                List<Entry> membersList = new LinkedList<Entry>(Arrays.asList(members));
-                membersList.remove(i);
-                members = membersList.toArray(new Entry[size-1]);
-                break;
+        Entry[] tempMembers = new Entry[members.length-1];
+        int count = 0;
+        for (Entry member : members) {
+            if (!member.getSurname().equals(surname)) {
+                tempMembers[count] = member;
+                count += 1;
             }
         }
+        members = tempMembers;
 
     }
 
     @Override
     public void deleteEntryUsingExtension(String number) {
 
-        for (int i=0; i<members.length; i++) {
-            if (number.equals(members[i].getExtension())) {
-                int size = members.length;
-                List<Entry> membersList = new LinkedList<Entry>(Arrays.asList(members));
-                membersList.remove(i);
-                members = membersList.toArray(new Entry[size-1]);
-                break;
+        Entry[] tempMembers = new Entry[members.length-1];
+        int count = 0;
+        for (Entry member : members) {
+            if (!member.getExtension().equals(number)) {
+                tempMembers[count] = member;
+                count += 1;
             }
         }
+        members = tempMembers;
 
     }
 

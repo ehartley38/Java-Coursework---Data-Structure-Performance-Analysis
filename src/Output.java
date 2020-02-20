@@ -102,14 +102,13 @@ public class Output {
         System.out.println("|       Surname      |       Initials     |      Extension     |");
         System.out.println("+--------------------+--------------------+--------------------+");
 
-
         for (int i=0; i<members.size(); i++) {
             System.out.println("|" + asciiPaddedData(members.get(i).getSurname()) + "|" + asciiPaddedData(members.get(i).getInitials()) + "|" +
                     asciiPaddedData(members.get(i).getExtension()) + "|");
         }
         System.out.println("+--------------------+--------------------+--------------------+");
 
-        //implement table into cli, get rid of linkedlist in arrayDirectory
+        //get rid of linkedlist in arrayDirectory, see if I can have a look at csv reader class to make it more my own
 
     }
 
