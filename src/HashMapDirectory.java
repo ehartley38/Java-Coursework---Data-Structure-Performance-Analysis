@@ -1,3 +1,6 @@
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -74,5 +77,13 @@ public class HashMapDirectory implements Directory{
         return initials;
     }
 
+    public void outputToCSV() throws FileNotFoundException, UnsupportedEncodingException {
+        PrintWriter writer = new PrintWriter("test_data.csv", "UTF-8");
 
+        for (int i=0; i<toArrayList().size(); i++) {
+            writer.println(toArrayList().get(i).getSurname() + "," + toArrayList().get(i).getInitials() + "," +
+                    toArrayList().get(i).getExtension());
+        }
+        writer.close();
+    }
 }

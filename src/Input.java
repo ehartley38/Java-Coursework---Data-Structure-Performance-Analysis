@@ -112,8 +112,13 @@ public class Input {
                 if (directoryType.equals("array")) {
                     ad.outputToCSV();
                     break;
+                } else if (directoryType.equals("arraylist")){
+                    ald.outputToCSV();
+                    break;
+                } else {
+                    hmd.outputToCSV();
+                    break;
                 }
-                //output to csv here
             case "8":
                 System.exit(0);
         }
