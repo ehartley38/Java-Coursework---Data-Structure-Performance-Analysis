@@ -1,3 +1,6 @@
+import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Input {
@@ -8,10 +11,12 @@ public class Input {
     private ArrayDirectory ad;
     private ArrayListDirectory ald;
     private HashMapDirectory hmd;
+    private Output out;
 
-    public Input(String csvFile, String typeOfDirectory) {
+    public Input(String csvFile, String typeOfDirectory) throws FileNotFoundException, UnsupportedEncodingException {
 
         this.csvFile = csvFile;
+        out = new Output("AnalysisResults.txt", false);
 
         switch (typeOfDirectory.toLowerCase()) {
             case "array":
@@ -67,7 +72,7 @@ public class Input {
             case "array":
                 ad.insertEntry(new Entry(surname, initials, extension));
                 break;
-            case "arrayList":
+            case "arraylist":
                 ald.insertEntry(new Entry(surname, initials, extension));
                 break;
             case "hashmap":
@@ -101,7 +106,8 @@ public class Input {
                 lookupExtensionUsingName();
                 break;
             case "6":
-                System.out.println("Printing Directory");
+                printDirectory();
+                break;
             case "7":
                 System.exit(0);
         }
@@ -115,7 +121,7 @@ public class Input {
             case "array":
                 ad.deleteEntryUsingName(surname);
                 break;
-            case "arrayList":
+            case "arraylist":
                 ald.deleteEntryUsingName(surname);
                 break;
             case "hashmap":
@@ -134,7 +140,7 @@ public class Input {
             case "array":
                 ad.deleteEntryUsingExtension(extension);
                 break;
-            case "arrayList":
+            case "arraylist":
                 ald.deleteEntryUsingExtension(extension);
                 break;
             case "hashmap":
@@ -161,7 +167,7 @@ public class Input {
             case "array":
                 ad.updateExtensionUsingName(surname, extension);
                 break;
-            case "arrayList":
+            case "arraylist":
                 ald.updateExtensionUsingName(surname, extension);
                 break;
             case "hashmap":
@@ -179,7 +185,7 @@ public class Input {
             case "array":
                 System.out.println(ad.lookupExtension(surname));
                 break;
-            case "arrayList":
+            case "arraylist":
                 System.out.println(ald.lookupExtension(surname));
                 break;
             case "hashmap":
@@ -187,6 +193,21 @@ public class Input {
                 break;
         }
 
+    }
+
+    private void printDirectory() {
+
+        switch (directoryType) {
+            case "array":
+                out.printDirectoryASCII((ArrayList<Entry>) ad.toArrayList());
+                break;
+            case "arraylist":
+                out.printDirectoryASCII((ArrayList<Entry>) ald.toArrayList());
+                break;
+            case "hashmap":
+                out.printDirectoryASCII((ArrayList<Entry>) hmd.toArrayList());
+                break;
+        }
     }
 
     public String getCsvFile() {

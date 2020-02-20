@@ -10,12 +10,13 @@ public class Output {
     PerformanceTesting pt;
 
 
-    public Output(String fileName) throws FileNotFoundException, UnsupportedEncodingException {
+    public Output(String fileName, boolean runAnalysis) throws FileNotFoundException, UnsupportedEncodingException {
+
         this.fileName = fileName;
-        performanceAnalysisFile();
 
-
-
+        if (runAnalysis) {
+            performanceAnalysisFile();
+        }
 
     }
 
@@ -108,7 +109,7 @@ public class Output {
         }
         System.out.println("+--------------------+--------------------+--------------------+");
 
-        //Update hashmap to array list method, implement table into cli, get rid of linkedlist in arrayDirectory
+        //implement table into cli, get rid of linkedlist in arrayDirectory
 
     }
 
