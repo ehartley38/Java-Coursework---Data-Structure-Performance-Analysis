@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="306bfce7-181f-4b62-9589-296cca981413" name="Default Changelist" comment="">
+    <list default="true" id="8769de05-e448-412e-bb98-3f131eb08f5a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Output.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +30,6 @@
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1294" />
-    <option name="height" value="1407" />
   </component>
   <component name="ProjectId" id="1XfmG2OtTs21oZrVc7yoblaKTpM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -103,7 +101,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="306bfce7-181f-4b62-9589-296cca981413" name="Default Changelist" comment="" />
+      <changelist id="8769de05-e448-412e-bb98-3f131eb08f5a" name="Default Changelist" comment="" />
       <created>1581439779332</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -124,6 +122,9 @@
       <workItem from="1582044672208" duration="4184000" />
       <workItem from="1582059087612" duration="861000" />
       <workItem from="1582060018926" duration="2907000" />
+      <workItem from="1582148962735" duration="27000" />
+      <workItem from="1582150312317" duration="599000" />
+      <workItem from="1582189982537" duration="1624000" />
     </task>
     <task id="LOCAL-00001" summary="Added the necessary files">
       <created>1581440420376</created>
@@ -376,22 +377,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="234" y="204" width="1410" height="789" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582062926827" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1582064769145">
+    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1582193195188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582064769145" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1582064769145">
+    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582193195188" />
+    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1582193195188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582064769145" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1582064769145">
+    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582193195188" />
+    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1582193195188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582064769145" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1582064769145">
+    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582193195188" />
+    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1582193195188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582064769145" />
+    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582193195188" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581794880197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -420,17 +421,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1032" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582062930801" />
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582145379855">
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582190079163">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582145379855" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582190079163" />
     <state x="672" y="312" key="git4idea.merge.GitPullDialog" timestamp="1581964981194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="672" y="312" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581964981194" />
-    <state x="1182" y="143" key="refactoring.ChangeSignatureDialog" timestamp="1581616871322">
+    <state x="1182" y="143" key="refactoring.ChangeSignatureDialog" timestamp="1582192761305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1182" y="143" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581616871322" />
+    <state x="1182" y="143" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582192761305" />
   </component>
 </project>

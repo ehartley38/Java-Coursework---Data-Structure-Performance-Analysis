@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 
         Output out = new Output("AnalysisTests.txt");
-        ArrayDirectory ad = new ArrayDirectory("test_data.csv");
+       // ArrayDirectory ad = new ArrayDirectory("test_data.csv");
         ArrayListDirectory ald = new ArrayListDirectory("test_data.csv");
 
         out.printDirectoryASCII((ArrayList<Entry>) ald.toArrayList());
@@ -17,8 +17,6 @@ public class Main {
 
         /*
         String directoryType = null;
-
-        Output out = new Output("AnalysisTests.txt");
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose you're directory type:\narray - 1\narrayList - 2\nhashMap - 3");

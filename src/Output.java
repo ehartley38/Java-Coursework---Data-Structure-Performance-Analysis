@@ -9,6 +9,7 @@ public class Output {
     String fileName;
     PerformanceTesting pt;
 
+
     public Output(String fileName) throws FileNotFoundException, UnsupportedEncodingException {
         this.fileName = fileName;
         performanceAnalysisFile();
@@ -96,18 +97,24 @@ public class Output {
 
 
     public void printDirectoryASCII(ArrayList<Entry> members) {
-        System.out.println("+---------+----------+-----------+");
-        System.out.println("| Surname | Initials | Extension |");
+        System.out.println("+--------------------+--------------------+--------------------+");
+        System.out.println("|       Surname      |       Initials     |      Extension     |");
+        System.out.println("+--------------------+--------------------+--------------------+");
+
 
         for (int i=0; i<members.size(); i++) {
-            System.out.println("|" + members.get(i).getSurname() + "|" + members.get(i).getInitials() + "|" +
-                    members.get(i).getExtension() + "|");
+            System.out.println("|" + asciiPaddedData(members.get(i).getSurname()) + "|" + asciiPaddedData(members.get(i).getInitials()) + "|" +
+                    asciiPaddedData(members.get(i).getExtension()) + "|");
         }
-
-        System.out.println("+---------+----------+-----------+");
+        System.out.println("+--------------------+--------------------+--------------------+");
 
         //Update hashmap to array list method, make ascii table neater, implement table into cli, get rid of linkedlist in arrayDirectory
 
     }
+
+     public String asciiPaddedData(String test) {
+        return String.format("%-20s", test);
+    }
+
 
 }
