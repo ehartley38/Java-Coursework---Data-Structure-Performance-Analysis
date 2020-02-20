@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 
@@ -28,9 +27,7 @@ public class ArrayDirectory implements Directory {
         int size = members.length;
         Entry[] tempMembers = new Entry[size+1];
 
-        for (int i=0; i<size; i++){
-            tempMembers[i] = members[i];
-        }
+        System.arraycopy(members, 0, tempMembers, 0, size);
 
         tempMembers[size] = entry;
         members = tempMembers;
@@ -70,9 +67,9 @@ public class ArrayDirectory implements Directory {
 
     @Override
     public void updateExtensionUsingName(String surname, String newNumber) {
-        for (int i=0; i<members.length; i++) {
-            if(members[i].getSurname().equals(surname)){
-                members[i].setExtension(newNumber);
+        for (Entry member : members) {
+            if (member.getSurname().equals(surname)) {
+                member.setExtension(newNumber);
             }
         }
 
@@ -80,9 +77,9 @@ public class ArrayDirectory implements Directory {
 
     @Override
     public String lookupExtension(String surname) {
-        for (int i=0; i<members.length; i++){
-            if (members[i].getSurname().equals(surname)){
-                return members[i].getExtension();
+        for (Entry member : members) {
+            if (member.getSurname().equals(surname)) {
+                return member.getExtension();
             }
         }
 

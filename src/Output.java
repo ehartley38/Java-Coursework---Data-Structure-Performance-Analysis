@@ -1,6 +1,8 @@
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 public class Output {
@@ -10,7 +12,7 @@ public class Output {
     PerformanceTesting pt;
 
 
-    public Output(String fileName, boolean runAnalysis) throws FileNotFoundException, UnsupportedEncodingException {
+    public Output(String fileName, boolean runAnalysis) throws IOException {
 
         this.fileName = fileName;
 
@@ -21,10 +23,10 @@ public class Output {
     }
 
 
-    private void performanceAnalysisFile() throws FileNotFoundException, UnsupportedEncodingException {
+    private void performanceAnalysisFile() throws IOException {
         pt = new PerformanceTesting();
 
-        writer = new PrintWriter(fileName, "UTF-8");
+        writer = new PrintWriter(fileName, StandardCharsets.UTF_8);
 
         writer.println("---PERFORMANCE RESULTS---\n");
         printDataInsertionResults();
@@ -102,13 +104,13 @@ public class Output {
         System.out.println("|       Surname      |       Initials     |      Extension     |");
         System.out.println("+--------------------+--------------------+--------------------+");
 
-        for (int i=0; i<members.size(); i++) {
-            System.out.println("|" + asciiPaddedData(members.get(i).getSurname()) + "|" + asciiPaddedData(members.get(i).getInitials()) + "|" +
-                    asciiPaddedData(members.get(i).getExtension()) + "|");
+        for (Entry member : members) {
+            System.out.println("|" + asciiPaddedData(member.getSurname()) + "|" + asciiPaddedData(member.getInitials()) + "|" +
+                    asciiPaddedData(member.getExtension()) + "|");
         }
         System.out.println("+--------------------+--------------------+--------------------+");
 
-        //get rid of linkedlist in arrayDirectory, see if I can have a look at csv reader class to make it more my own
+
 
     }
 

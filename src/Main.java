@@ -1,21 +1,24 @@
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//For software engineering best practice, you should also include some evidence of correctness testing for each implementation of the Directory.
+//export all Directory entries to a CSV file
+//produce some documentation that contains a discussion about your findings and summarises your results.
+// see if I can have a look at csv reader class to make it more my own 500 words
+//comment my code
+//README file explaining how to run the program
+
 public class Main {
 
-    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
-
-        Output out = new Output("AnalysisTests.txt", true);
-
-        //ArrayListDirectory ald = new ArrayListDirectory("test_data.csv");
-        //out.printDirectoryASCII((ArrayList<Entry>) ald.toArrayList());
-
-
+    public static void main(String[] args) throws IOException {
 
         String directoryType = null;
+
+        Output out = new Output("AnalysisTests.txt", true);
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose you're directory type:\narray - 1\narrayList - 2\nhashMap - 3");
