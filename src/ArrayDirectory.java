@@ -40,15 +40,18 @@ public class ArrayDirectory implements Directory {
     public void deleteEntryUsingName(String surname) {
         Entry[] tempMembers = new Entry[members.length-1];
         int count = 0;
-        for (Entry member : members) {
-            if (!member.getSurname().equals(surname)) {
-                tempMembers[count] = member;
-                count += 1;
-            }
-        }
-        members = tempMembers;
+            for (Entry member : members) {
+                if (!member.getSurname().equals(surname)) {
+                    tempMembers[count] = member;
+                    count += 1;
 
-    }
+                }
+            }
+            members = tempMembers;
+        }
+
+
+
 
     @Override
     public void deleteEntryUsingExtension(String number) {
@@ -96,6 +99,10 @@ public class ArrayDirectory implements Directory {
     public Entry[] getMembers(){
 
         return members;
+    }
+
+    public void setMembers(Entry[] memberList) {
+        members = memberList;
     }
 
 

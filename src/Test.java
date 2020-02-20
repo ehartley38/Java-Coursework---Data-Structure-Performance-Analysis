@@ -142,14 +142,15 @@ public class Test {
             case "array":
                 ArrayDirectory ad = new ArrayDirectory("test_data.csv");
                 Entry[] membersArray = ad.getMembers();
-                String middleSurnameArray;
 
-                middleSurnameArray = membersArray[(int) Math.ceil(membersArray.length / 2)].getSurname();
+                String middleSurnameArray = membersArray[(int) Math.ceil(membersArray.length / 2)].getSurname();
                 for (int i = 0; i <= testCycles; i++) {
                     stopwatch.start();
                     ad.deleteEntryUsingName(middleSurnameArray);
                     stopwatch.stop();
                     updateTimes();
+                    ad.setMembers(membersArray);
+
                 }
                 averageTime = totalTime / testCycles;
 
@@ -210,6 +211,8 @@ public class Test {
                     ad.deleteEntryUsingExtension(middleExtensionArray);
                     stopwatch.stop();
                     updateTimes();
+                    ad.setMembers(membersArray);
+
                 }
                 averageTime = totalTime / testCycles;
 

@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 
-        //Output out = new Output("AnalysisTests.txt", true);
+        Output out = new Output("AnalysisTests.txt", true);
 
         //ArrayListDirectory ald = new ArrayListDirectory("test_data.csv");
         //out.printDirectoryASCII((ArrayList<Entry>) ald.toArrayList());
