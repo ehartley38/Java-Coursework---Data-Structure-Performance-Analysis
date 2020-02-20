@@ -1,4 +1,5 @@
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -13,7 +14,7 @@ public class Input {
     private HashMapDirectory hmd;
     private Output out;
 
-    public Input(String csvFile, String typeOfDirectory) throws FileNotFoundException, UnsupportedEncodingException {
+    public Input(String csvFile, String typeOfDirectory) throws IOException {
 
         this.csvFile = csvFile;
         out = new Output("AnalysisResults.txt", false);
@@ -38,8 +39,7 @@ public class Input {
 
         stopwatch = new StopWatch();
         scanner = new Scanner(System.in);
-        Boolean run = true;
-        while (run) {
+        while (true) {
             System.out.println("Menu\nInsert New Entry - 1\nDelete Entry Using Name - 2\nDelete Entry Using Extension - 3" +
                     "\nUpdate Extension Using Name - 4\nLookup Extension - 5\nPrint Directory - 6\nExit - 7");
             String choice = scanner.nextLine();
