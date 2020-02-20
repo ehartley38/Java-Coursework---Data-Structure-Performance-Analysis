@@ -17,7 +17,7 @@ public class Input {
     public Input(String csvFile, String typeOfDirectory) throws IOException {
 
         this.csvFile = csvFile;
-        out = new Output("AnalysisResults.txt", false);
+        out = new Output("AnalysisResults.txt", false, "array");
 
         switch (typeOfDirectory.toLowerCase()) {
             case "array":
@@ -41,7 +41,7 @@ public class Input {
         scanner = new Scanner(System.in);
         while (true) {
             System.out.println("Menu\nInsert New Entry - 1\nDelete Entry Using Name - 2\nDelete Entry Using Extension - 3" +
-                    "\nUpdate Extension Using Name - 4\nLookup Extension - 5\nPrint Directory - 6\nExit - 7");
+                    "\nUpdate Extension Using Name - 4\nLookup Extension - 5\nPrint Directory - 6\nSave to CSV - 7\nExit - 8");
             String choice = scanner.nextLine();
             getDecision(choice);
         }
@@ -87,7 +87,7 @@ public class Input {
         return extension.substring(0, 1).matches("0") && extension.length() == 5;
     }
 
-    private void getDecision(String choice) {
+    private void getDecision(String choice) throws FileNotFoundException, UnsupportedEncodingException {
 
         switch (choice) {
             case "1":
@@ -109,6 +109,12 @@ public class Input {
                 printDirectory();
                 break;
             case "7":
+                if (directoryType.equals("array")) {
+                    ad.outputToCSV();
+                    break;
+                }
+                //output to csv here
+            case "8":
                 System.exit(0);
         }
     }

@@ -8,13 +8,14 @@ import java.util.ArrayList;
 public class Output {
 
     PrintWriter writer;
-    String fileName;
+    String fileName, directoryType;
     PerformanceTesting pt;
 
 
-    public Output(String fileName, boolean runAnalysis) throws IOException {
+    public Output(String fileName, boolean runAnalysis, String directoryType) throws IOException {
 
         this.fileName = fileName;
+        this.directoryType = directoryType;
 
         if (runAnalysis) {
             performanceAnalysisFile();
@@ -117,6 +118,8 @@ public class Output {
      public String asciiPaddedData(String test) {
         return String.format("%-20s", test);
     }
+
+
 
 
 }

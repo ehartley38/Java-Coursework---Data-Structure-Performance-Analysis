@@ -1,6 +1,7 @@
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -11,14 +12,16 @@ import java.util.Scanner;
 // see if I can have a look at csv reader class to make it more my own 500 words
 //comment my code
 //README file explaining how to run the program
+//Delete duplicates
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        String directoryType = null;
 
-        Output out = new Output("AnalysisTests.txt", true);
+
+
+        String directoryType = null;
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose you're directory type:\narray - 1\narrayList - 2\nhashMap - 3");
@@ -37,6 +40,7 @@ public class Main {
                 System.exit(0);
         }
 
+        Output out = new Output("AnalysisTests.txt", true, directoryType);
         Input input = new Input("test_data.csv", directoryType);
 
 
