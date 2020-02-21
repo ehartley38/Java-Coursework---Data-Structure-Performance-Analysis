@@ -1,22 +1,14 @@
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
-//For software engineering best practice, you should also include some evidence of correctness testing for each implementation of the Directory.
-// see if I can have a look at csv reader class to make it more my own
-//comment my code
-//README file explaining how to run the program
-//Delete duplicates
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
 
-
+        //CUSTOMISE PERFORMANCE ANALYSIS FILE LOCATION AND NAME HERE and CHANGE INPUT SAMPLE DATA HERE
+        String analysisTestFile = "AnalysisTests.txt";
+        String csvSampleData = "test_data.csv";
 
 
         String directoryType = null;
@@ -40,13 +32,13 @@ public class Main {
         }
 
         //initialise output object to record performance times for the first time
-        Output out = new Output("AnalysisTests.txt", true, directoryType);
+        Output out = new Output(analysisTestFile, true, directoryType);
 
         //Initialise input object to run the command line menu
-        Input input = new Input("test_data.csv", directoryType);
+        Input input = new Input(csvSampleData, directoryType);
 
 
-
+    //--------------------CORRECTNESS TESTING--------------------
 /*      TEST THE PERFORMANCE OF EACH TEST
         System.out.println(insertionTest.bestCase);
         System.out.println(insertionTest.worstCase);
@@ -89,7 +81,8 @@ public class Main {
         ald.updateExtensionUsingName("Westgarth", "99999");
         System.out.println(ald.getMembers());
         System.out.println(ald.lookupExtension("Westgarth"));*/
-        /*
+
+        /*TEST the HashMapDirectory Class
         HashMapDirectory hmd = new HashMapDirectory();
         hmd.insertEntry(new Entry("Hartley", "E.H", "12345"));
         hmd.insertEntry(new Entry("Drinkwater", "E.W", "11111"));
