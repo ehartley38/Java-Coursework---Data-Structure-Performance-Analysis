@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+//Create an instance of test class for each individual test
 public class Test {
 
     private String directoryType, testType;
@@ -11,7 +12,7 @@ public class Test {
         this.directoryType = directoryType;
         this.testType = testType;
         stopwatch = new StopWatch();
-
+        //Check what type of test this test object is using the parameter
         checkTestType();
     }
 
@@ -35,19 +36,21 @@ public class Test {
         }
     }
 
-
+    //Data insertion test for the three data types
     public void dataInsertionTest(String directoryType) {
 
         switch (directoryType) {
             case "array":
                 ArrayDirectory ad = new ArrayDirectory("test_data.csv");
-
+                //Repeat testCycles number of times
                 for (int i = 0; i <= testCycles; i++) {
                     stopwatch.start();
                     ad.insertEntry(new Entry("Hartley", "E.H", "01234"));
                     stopwatch.stop();
+                    //Each time you stop the stopwatch, update times (ie update the total, worst and best case times)
                     updateTimes();
                 }
+                //Calculate average time
                 averageTime = totalTime / testCycles;
 
 
@@ -78,6 +81,7 @@ public class Test {
 
     }
 
+    //Data lookup test for the three data types
     public void dataLookupTest(String directoryType) {
 
         switch (directoryType) {
@@ -136,6 +140,7 @@ public class Test {
 
     }
 
+    //Data deletion test for the three data types
     public void dataDeletionWithNameTest(String directoryType) {
 
         switch (directoryType) {
@@ -197,6 +202,7 @@ public class Test {
 
     }
 
+    //Data deletion test for the three data types
     public void dataDeletionWithExtensionTest(String directoryType) {
 
         switch (directoryType) {
@@ -256,12 +262,7 @@ public class Test {
         }
     }
 
-
-    public long getBestCase() {
-        return bestCase;
-    }
-
-
+    //Update best, worst and total time of the current test
     public void updateTimes() {
         totalTime += stopwatch.getElapsedTime();
         if (stopwatch.getElapsedTime() < bestCase) {

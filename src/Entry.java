@@ -4,11 +4,13 @@ public class Entry {
 
 
     public Entry(String surname, String initials, String extension){
+        //Initialise surname, initials and extension of entry object
         this.surname = surname;
         this.initials = initials;
         this.extension = extension;
     }
 
+    //Getters and setters for values
     public String getSurname() {
         return surname;
     }

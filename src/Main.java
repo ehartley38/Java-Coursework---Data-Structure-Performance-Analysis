@@ -22,6 +22,7 @@ public class Main {
         String directoryType = null;
 
         Scanner scanner = new Scanner(System.in);
+        //Choose type of directory which will be used throughout rest of program
         System.out.println("Choose you're directory type:\narray - 1\narrayList - 2\nhashMap - 3");
         String directoryChoice = scanner.nextLine();
         switch (directoryChoice) {
@@ -38,7 +39,10 @@ public class Main {
                 System.exit(0);
         }
 
+        //initialise output object to record performance times for the first time
         Output out = new Output("AnalysisTests.txt", true, directoryType);
+
+        //Initialise input object to run the command line menu
         Input input = new Input("test_data.csv", directoryType);
 
 

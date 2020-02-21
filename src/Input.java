@@ -19,6 +19,7 @@ public class Input {
         this.csvFile = csvFile;
         out = new Output("AnalysisResults.txt", false, "array");
 
+        //Check the directory type chosen and create objects of directories accordingly
         switch (typeOfDirectory.toLowerCase()) {
             case "array":
                 ad = new ArrayDirectory(csvFile);
@@ -39,16 +40,19 @@ public class Input {
 
         stopwatch = new StopWatch();
         scanner = new Scanner(System.in);
+        //Continuously loop through menu
         while (true) {
             System.out.println("Menu\nInsert New Entry - 1\nDelete Entry Using Name - 2\nDelete Entry Using Extension - 3" +
                     "\nUpdate Extension Using Name - 4\nLookup Extension - 5\nPrint Directory - 6\nSave to CSV - 7\nExit - 8");
             String choice = scanner.nextLine();
+            //Check desicion of user input
             getDecision(choice);
         }
 
 
     }
 
+    //Menu process for inputting a new staff member
     private void insertStaffMember() {
         System.out.println("Enter the staff members surname: ");
         String surname = scanner.nextLine();
@@ -56,9 +60,11 @@ public class Input {
         String initials = scanner.nextLine();
         System.out.println("Enter the staff members extension number: ");
         String extension = scanner.nextLine();
+        //Check if extension input complies with extension format rules
         if (checkExtensionFormat(extension)) {
             System.out.println("Entry submitted");
         }
+        //Keep asking user to input extension until it is of correct format
         while (!checkExtensionFormat(extension)) {
             System.out.println("Extension number has to begin with a 0 and be 5 digits in length. Please try again: ");
             extension = scanner.nextLine();
@@ -67,7 +73,7 @@ public class Input {
             }
         }
 
-
+        //Depending on directory type chosen at start, add staff member to relevant directory
         switch (directoryType) {
             case "array":
                 ad.insertEntry(new Entry(surname, initials, extension));
@@ -83,10 +89,12 @@ public class Input {
 
     }
 
+    //Return true if extension starts with a 0 and is length 5
     private boolean checkExtensionFormat(String extension) {
         return extension.substring(0, 1).matches("0") && extension.length() == 5;
     }
 
+    //Run relevant methods depending on what user chose in menu
     private void getDecision(String choice) throws FileNotFoundException, UnsupportedEncodingException {
 
         switch (choice) {
@@ -124,6 +132,7 @@ public class Input {
         }
     }
 
+    //Delete staff member using name menu process
     private void deleteStaffMemberUsingName() {
         System.out.println("Enter the surname of the staff member you wish to delete: ");
         String surname = scanner.nextLine();
@@ -143,6 +152,7 @@ public class Input {
 
     }
 
+    //Delete staff member using extension menu process
     private void deleteStaffMemberUsingExtension() {
         System.out.println("Enter the extension of the staff member you wish to delete: ");
         String extension = scanner.nextLine();
@@ -162,6 +172,7 @@ public class Input {
 
     }
 
+    //Update extension using surname menu process
     private void updateExtensionUsingName() {
         System.out.println("Enter the surname of the staff member whose extension you wish to update: ");
         String surname = scanner.nextLine();
@@ -169,6 +180,7 @@ public class Input {
         assert false;
         System.out.println("Enter the new extension: ");
         extension = scanner.nextLine();
+        //Keep asking for user to input correct extension format until they do
         while (!checkExtensionFormat(extension)) {
             System.out.print("Extension is of wrong format. Please try again");
             extension = scanner.nextLine();
@@ -188,6 +200,7 @@ public class Input {
         System.out.println("Updated");
     }
 
+    //Lookup member extensions using their surname
     private void lookupExtensionUsingName() {
         System.out.println("Enter a surname to see their extension number: ");
         String surname = scanner.nextLine();
@@ -206,6 +219,7 @@ public class Input {
 
     }
 
+    //Print the directory to command line in neat ascii table format
     private void printDirectory() {
 
         switch (directoryType) {

@@ -13,7 +13,8 @@ public class PerformanceTesting {
     ArrayList<Test> hashMapTests = new ArrayList<Test>();
 
 
-
+    //Create instances of Test class with each different test for each directory type. Then add the objects to an array list
+    //containing all test objects for that directory class
     public PerformanceTesting() throws FileNotFoundException {
 
 
